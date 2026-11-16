@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#15315c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="VS Chem">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="data:image/png;base64,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">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<title>ใบบันทึกการส่งสินค้ารายวัน | VS Chem</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { sans: ['Sarabun', 'Noto Sans Thai', 'Tahoma', 'sans-serif'] },
+  colors: { navy: { 50:'#f1f5fa', 100:'#dfe8f3', 600:'#24508f', 700:'#1b3f75', 800:'#15315c', 900:'#0f2444' } }
+}}};
+</script>
+<style>
+  [x-cloak]{display:none!important}
+  .field{width:100%;border:1px solid #cbd5e1;border-radius:.375rem;padding:.4rem .55rem;background:#fff;font-size:.95rem}
+  .field:focus{outline:2px solid #24508f;outline-offset:0;border-color:#24508f}
+  .print-only{display:none}
+  .lbl{display:block;font-size:.78rem;color:#475569;margin-bottom:.15rem;font-weight:500}
+  .btn{border-radius:.375rem;padding:.45rem .9rem;font-weight:600;font-size:.9rem}
+    .tbl th{border:1px solid #cbd5e1;padding:.35rem .4rem;font-weight:600;text-align:left;font-size:.8rem;white-space:nowrap}
+    .tbl td{border:1px solid #cbd5e1;padding:.2rem;vertical-align:top}
+    .tbl .field{padding:.25rem .35rem;font-size:.85rem}
+  .btn:focus-visible{outline:2px solid #24508f;outline-offset:2px}
+  @media print{
+    @page{size:A4 landscape;margin:8mm}
+    .overflow-x-auto{overflow:visible!important}
+    table.tbl{min-width:0!important;width:100%}
+    .no-print{display:none!important}
+    .print-only{display:block!important}
+    body{background:#fff!important;font-size:10px}
+    .sheet{box-shadow:none!important;border:none!important;max-width:none!important}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .order{break-inside:avoid;page-break-inside:avoid}
+    .item{break-inside:avoid}
+    .field{border:none;border-bottom:1px solid #94a3b8;border-radius:0;padding:.1rem 0;background:transparent}
+    select.field{appearance:none}
+  }
+</style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans">
+<div x-data="dispatchApp()" x-init="init()" x-cloak class="max-w-7xl mx-auto p-3 sm:p-6">
+  <!-- Login -->
+  <div x-show="!authUser" class="fixed inset-0 z-50 bg-slate-100 flex items-center justify-center p-4">
+    <div class="w-full max-w-md bg-white rounded-xl shadow-xl border border-slate-200 p-6">
+      <div class="text-center mb-6"><img :src="logo" alt="VS Chem" class="w-24 h-24 rounded-2xl mx-auto mb-3 shadow"><h1 class="text-2xl font-bold text-navy-800">VS Chem</h1><p class="text-sm text-slate-500">ระบบบันทึกการส่งสินค้ารายวัน</p></div>
+      <form @submit.prevent="login()" class="space-y-4">
+        <div><label class="lbl">ชื่อผู้ใช้</label><input class="field" x-model.trim="loginForm.username" autocomplete="username" required placeholder="Username"></div>
+        <div><label class="lbl">รหัสผ่าน</label><input type="password" class="field" x-model="loginForm.password" autocomplete="current-password" required placeholder="Password"></div>
+        <p x-show="authMsg" class="text-sm text-red-600" x-text="authMsg"></p>
+        <button type="submit" class="btn w-full bg-navy-700 text-white hover:bg-navy-800" :disabled="authBusy" x-text="authBusy ? 'กำลังเข้าสู่ระบบ...' : 'เข้าสู่ระบบ'"></button>
+      </form><p class="text-xs text-slate-400 text-center mt-4">กรุณาเข้าสู่ระบบด้วยบัญชีที่ผู้ดูแลกำหนด</p>
+      <details class="mt-4 text-xs text-slate-600 border-t border-slate-200 pt-3">
+        <summary class="cursor-pointer font-semibold">ตั้งค่า Google Sheet (ซิงค์ข้อมูลเมื่อใช้นอก claude.ai)</summary>
+        <p class="mt-2">วาง URL ของ Web app (ลงท้าย /exec) และรหัสลับ (TOKEN) ที่ตั้งใน Apps Script ทำครั้งเดียวต่อเครื่อง</p>
+        <input class="field text-xs mt-2" x-model.trim="sheetUrl" placeholder="https://script.google.com/macros/s/.../exec">
+        <input class="field text-xs mt-2" x-model.trim="sheetToken" placeholder="TOKEN">
+        <div class="flex gap-2 mt-2"><button type="button" class="btn bg-navy-700 text-white hover:bg-navy-800" @click="saveSheet()">บันทึกและเชื่อมต่อ</button><button type="button" class="btn bg-white border border-slate-300 text-slate-600" @click="clearSheet()">ล้างค่า</button></div>
+        <p class="mt-2" x-text="syncMsg"></p>
+      </details>
+    </div>
+  </div>
+  <div class="no-print flex justify-end items-center gap-3 mb-2 text-sm"><span class="text-xs" :class="syncState === 'err' ? 'text-red-600' : (syncState === 'on' ? 'text-green-700' : 'text-slate-500')" x-text="'☁ ' + syncMsg"></span><span x-show="liveMsg" class="text-xs font-semibold text-orange-700 bg-orange-100 rounded px-2 py-0.5" x-text="liveMsg"></span><button x-show="dbRef" class="text-xs text-navy-700 underline" @click="scheduleSync(0)">ซิงค์ตอนนี้</button><span class="text-slate-600" x-text="authUser ? authUser.username + ' · ' + roleLabel(authUser.role) : ''"></span><button x-show="authUser" class="text-red-600 underline" @click="logout()">ออกจากระบบ</button></div>
+
+  <nav class="no-print flex gap-1 mb-3 border-b border-slate-300" role="tablist">
+    <template x-for="t in tabs.filter(t => allowedTabs.includes(t.id))" :key="t.id">
+      <button role="tab" :aria-selected="tab === t.id" class="px-4 py-2 text-sm font-semibold rounded-t-md border border-b-0"
+        :class="tab === t.id ? 'bg-white border-slate-300 text-navy-800' : 'border-transparent text-slate-600 hover:bg-white/60'"
+        @click="tab = t.id; selVehicle = null; jobId = null" x-text="t.label"></button>
+    </template>
+  </nav>
+  <div x-show="authUser && !allowedTabs.length" class="no-print rounded-md border border-amber-400 bg-amber-50 p-4 text-sm text-amber-900">บัญชีนี้ยังไม่มีเมนูที่เข้าถึงได้ อาจกำลังโหลดข้อมูลสิทธิ์จากฐานข้อมูล รอสักครู่ ถ้ายังไม่ขึ้นให้แจ้งผู้ดูแลระบบ</div>
+
+  <!-- Toolbar -->
+  <div x-show="inTab('dispatch')" class="no-print flex flex-wrap items-center justify-between gap-2 mb-3">
+    <p class="text-sm" :class="savedErr ? 'text-red-600 font-semibold' : 'text-slate-600'" x-text="savedMsg"></p>
+    <div class="flex flex-wrap gap-2">
+      <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="saveDoc()">บันทึกใบงาน</button>
+      <button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="printDoc()">พิมพ์ / บันทึกเป็น PDF</button><button class="btn bg-white border border-slate-300 text-slate-600 hover:bg-slate-50" @click="printNative()">พิมพ์ตรงจากหน้านี้</button><button class="btn bg-green-600 text-white hover:bg-green-700" @click="shareJob(doc)">แชร์ใบงาน</button><button class="btn bg-green-600 text-white hover:bg-green-700" @click="shareLine(doc)">ส่งทาง LINE</button>
+      <button class="btn bg-white border border-slate-300 text-slate-600 hover:bg-slate-50" @click="reset()">เริ่มใบงานใหม่</button>
+    </div>
+  </div>
+
+  <main x-show="inTab('dispatch')" class="sheet bg-white rounded-lg shadow border border-slate-200">
+
+    <!-- Header -->
+    <header :class="stat(doc).head" class="text-white rounded-t-lg px-4 sm:px-6 py-4 flex items-start justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-3"><img :src="logo" alt="" class="w-12 h-12 rounded-lg"><h1 class="text-xl sm:text-2xl font-bold">ใบบันทึกการส่งสินค้ารายวัน</h1></div>
+        <p class="text-white/90 text-sm">VS Chem · Daily Dispatch &amp; Delivery Record</p>
+        <span class="inline-block mt-1 text-xs font-semibold rounded px-2 py-0.5 bg-white/25" x-text="statText(doc)"></span>
+      </div>
+      <div class="text-right">
+        <label class="text-xs text-navy-100 block">เลขที่ใบงาน</label>
+        <input x-model="doc.docNo" @input="doc.docNoAuto = false" @change="if (!doc.docNo.trim()) { doc.docNoAuto = true; doc.docNo = nextDocNo(doc.date); }" class="w-44 text-right text-2xl font-bold bg-transparent border-b border-navy-100/50 focus:outline-none focus:border-white" placeholder="อัตโนมัติ" aria-label="เลขที่ใบงาน">
+        <span x-show="doc.docNoAuto" class="block text-xs text-white/80 text-right">เลขอัตโนมัติ ล็อกเมื่อกดบันทึกใบงาน</span>
+      </div>
+    </header>
+
+    <section class="p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 border-b border-slate-200">
+      <div><label class="lbl">วันที่ขนส่ง</label><input type="date" class="field" x-model="doc.date" @change="dateChanged()"></div>
+      <div><label class="lbl">ทะเบียนรถ (ใช้จัดกลุ่มใบงาน)</label>
+        <select class="field font-semibold" x-model="doc.vehicle" @change="autoStartMile(doc)" :style="'border:2px solid ' + vc(doc.vehicle).bg + ';background:' + vc(doc.vehicle).tint">
+          <option value="">เลือกทะเบียน</option>
+          <template x-for="v in vehiclesList" :key="v.id"><option :value="v.plate" x-text="v.plate + (v.type && v.type !== 'own' ? ' [' + groupName(v.type) + ']' : '') + (v.note ? ' (' + v.note + ')' : '')"></option></template>
+          <template x-if="doc.vehicle && !vehiclesList.some(v => v.plate === doc.vehicle)"><option :value="doc.vehicle" x-text="doc.vehicle"></option></template>
+        </select></div>
+      <div><label class="lbl">พนักงานขับรถ</label>
+        <select class="field" x-model="doc.driver" @change="syncCrew(doc)">
+          <option value="">เลือกพนักงานขับรถ</option>
+          <template x-for="e in drivers" :key="e.id"><option :value="e.name" x-text="e.name"></option></template>
+          <template x-if="doc.driver && !drivers.some(e => e.name === doc.driver)"><option :value="doc.driver" x-text="doc.driver"></option></template>
+        </select></div>
+      <div class="sm:col-span-2 lg:col-span-4">
+        <label class="lbl">พนักงานประจำรถ / ผู้ช่วย (เลือกได้ 1-3 คน)</label>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+          <template x-for="i in [0, 1, 2]" :key="i">
+            <div :class="doc.crewList[i] ? '' : 'no-print'">
+              <select class="field" :aria-label="'ผู้ช่วยคนที่ ' + (i + 1)" x-model="doc.crewList[i]" @change="syncCrew(doc)">
+                <option value="" x-text="'ผู้ช่วยคนที่ ' + (i + 1) + ' (ไม่บังคับ)'"></option>
+                <template x-for="m in crewOptions(doc, i)" :key="m.id"><option :value="m.name" x-text="m.name"></option></template>
+                <template x-if="doc.crewList[i] && !crewOptions(doc, i).some(m => m.name === doc.crewList[i])"><option :value="doc.crewList[i]" x-text="doc.crewList[i]"></option></template>
+              </select>
+            </div>
+          </template>
+        </div>
+      </div>
+      <div class="sm:col-span-2 lg:col-span-4 grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div><label class="lbl">เลขไมล์ออกจากโกดัง</label><input type="number" min="0" class="field" x-model.number="doc.startMile" inputmode="numeric"><p x-show="prevMile(doc)" class="text-xs mt-1" :class="mileWarn(doc) ? 'text-amber-700' : 'text-slate-500'" x-text="mileHint(doc)"></p></div>
+        <div><label class="lbl">เลขไมล์กลับถึงโกดัง</label><input type="number" min="0" class="field" x-model.number="doc.endMile" inputmode="numeric"></div>
+        <div><div class="lbl">ระยะทางรวม</div><div class="text-lg font-bold text-navy-800" x-text="fmt(distance) + ' กม.'"></div><div x-show="distanceError" class="text-xs text-red-600">เลขไมล์กลับน้อยกว่าเลขไมล์ออก กรุณาตรวจสอบ</div></div>
+      </div>
+    </section>
+
+    <!-- Items -->
+    <section class="p-4 sm:p-6">
+      <div class="flex items-center justify-between mb-3">
+        <h2 class="text-lg font-semibold text-navy-800">รายการสินค้าตามใบอินวอยซ์</h2>
+        <div class="no-print flex gap-2">
+          <button class="btn bg-navy-600 text-white hover:bg-navy-700" @click="addOrder()">+ เพิ่มออเดอร์</button>
+        </div>
+      </div>
+
+      <!-- Excel Paste Import -->
+      <div class="no-print mb-4 rounded-md border border-navy-100 bg-navy-50 p-4">
+        <h3 class="font-semibold text-navy-800 mb-1">นำเข้ารายการสินค้าจาก Excel</h3>
+        <p class="text-xs text-slate-600 mb-2">คัดลอกข้อมูลจาก Excel แล้ววางในช่องนี้ได้เลย หนึ่งออเดอร์มีได้หลายบรรทัด ให้เว้น <b>1 บรรทัดว่าง</b> ระหว่างออเดอร์ (หรือเลข INV# เปลี่ยน ระบบจะแยกออเดอร์ให้เอง) ส่วน เลขที่เอกสารที่เกี่ยวข้อง, ลูกค้า, สถานที่ส่ง ที่เว้นว่างไว้ในบรรทัดถัดไปของออเดอร์เดียวกัน ระบบจะเติมให้จากบรรทัดบน</p>
+        <textarea rows="5" class="field text-sm" x-model="pasteText"
+          placeholder="1&#9;INV001&#9;บริษัท A&#9;สินค้า A&#9;100&#9;KG&#9;LOT001&#9;กรุงเทพฯ&#9;หมายเหตุ&#9;BP001&#10;2&#9;&#9;&#9;สินค้า B&#9;50&#9;KG&#9;LOT002&#9;&#9;&#9;&#10;&#10;3&#9;INV002&#9;บริษัท B&#9;สินค้า C&#9;200&#9;PAIL&#9;LOT003&#9;สมุทรสาคร&#9;&#9;BP002"></textarea>
+        <div class="flex flex-wrap gap-2 mt-3">
+          <button type="button" class="btn bg-navy-700 text-white hover:bg-navy-800" @click="importExcel()">นำเข้ารายการจาก Excel</button>
+          <button type="button" class="btn bg-white border border-slate-300 text-slate-600 hover:bg-slate-50" @click="pasteText=''; importMsg=''">ล้างข้อมูลที่วาง</button>
+        </div>
+        <p class="text-xs text-slate-500 mt-2">ลำดับคอลัมน์: ลำดับ | เลขที่เอกสารที่เกี่ยวข้อง | ลูกค้า | รายการสินค้า | จำนวน | Unit | Batch Att. | สถานที่ส่ง | หมายเหตุ | BP Catalog Name (คอลัมน์ลำดับไม่ถูกนำเข้า ส่วน BP Catalog Name เก็บตามแถวของสินค้านั้น แสดงสีแดง และตอนพิมพ์จะต่อท้ายหมายเหตุของแถวนั้น)</p>
+        <div class="text-sm mt-2 font-semibold" :class="importOk ? 'text-green-700' : 'text-red-600'" x-text="importMsg"></div>
+      </div>
+
+      <p x-show="doc.items.length===0" class="text-slate-500 text-sm py-6 text-center border border-dashed border-slate-300 rounded">ยังไม่มีออเดอร์ กด "เพิ่มออเดอร์" หรือวางข้อมูลจาก Excel เพื่อเริ่มบันทึก</p>
+
+      <div>
+        <template x-for="(g, gi) in groups" :key="g.order">
+          <div class="order border-2 border-navy-600 rounded-lg overflow-hidden" :class="gi > 0 ? 'mt-8' : ''">
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-1 bg-navy-800 text-white px-3 py-2">
+              <span class="font-semibold" x-text="'ออเดอร์ ' + (gi + 1) + (g.items[0].inv ? ' · ' + g.items[0].inv : '')"></span>
+              <span class="text-sm text-navy-100" x-text="g.items.length + ' รายการ · ' + fmt(orderKg(g)) + ' KG'"></span>
+              <div class="no-print ml-auto flex items-center gap-3 text-sm">
+                <button class="px-1 hover:underline disabled:opacity-30" :disabled="gi === 0" @click="moveOrder(g, -1)" title="เลื่อนขึ้น">▲</button>
+                <button class="px-1 hover:underline disabled:opacity-30" :disabled="gi === groups.length - 1" @click="moveOrder(g, 1)" title="เลื่อนลง">▼</button>
+                <button class="underline text-white/90 hover:text-white" @click="duplicateOrder(g)">ทำสำเนา</button>
+                <button class="underline text-white/90 hover:text-white" @click="removeOrder(g)">ลบออเดอร์</button>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto">
+              <table class="tbl w-full min-w-[1200px] text-sm border-collapse">
+                <thead class="bg-navy-50 text-navy-800">
+                  <tr>
+                    <th>INV#</th><th>ชื่อลูกค้า</th><th>สินค้า</th><th>จำนวน</th><th>หน่วย</th><th>Batch No.</th>
+                    <th>สถานที่ส่ง</th><th>เวลาเข้า</th><th>เวลาออก</th><th>เลขไมล์</th><th>หมายเหตุ</th><th class="no-print"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <template x-for="row in g.rows" :key="row.it.id">
+                    <tr :class="row.it.flag ? 'bg-yellow-100' : ''">
+                      <template x-if="row.orderFirst">
+                        <td :rowspan="g.items.length" class="bg-slate-50" style="min-width:9.5rem">
+                          <input class="field font-medium" :value="row.it.inv" @input="setInv(g, $event.target.value)" placeholder="INV#">
+                        </td>
+                      </template>
+                      <template x-if="row.first">
+                        <td :rowspan="row.stop.items.length" style="min-width:11rem">
+                          <input class="field" :value="row.it.customer" @input="setStop(row.stop, 'customer', $event.target.value)" placeholder="ชื่อลูกค้า">
+                          <button class="no-print mt-1 text-xs text-navy-700 underline" @click="addToStop(row.stop)">+ สินค้า</button>
+                        </td>
+                      </template>
+                      <td style="min-width:16rem"><input class="field" x-model="row.it.product" placeholder="ชื่อสินค้า / ขนาดบรรจุ"><input class="field mt-1 text-red-600 font-bold" :class="row.it.bp ? '' : 'no-print'" x-model="row.it.bp" placeholder="BP Catalog Name (แถวนี้)"></td>
+                      <td style="min-width:5.5rem"><input type="number" min="0" step="any" class="field" x-model.number="row.it.qty" inputmode="decimal"></td>
+                      <td style="min-width:5.5rem">
+                        <select class="field" x-model="row.it.unit"><template x-for="u in units"><option :value="u" x-text="u"></option></template></select>
+                        <input x-show="!['KG','TON'].includes(row.it.unit)" type="number" min="0" step="any" class="field mt-1" x-model.number="row.it.kg" placeholder="KG รวม" inputmode="decimal">
+                      </td>
+                      <td style="min-width:7.5rem"><input class="field" x-model="row.it.batch"></td>
+                      <template x-if="row.first">
+                        <td :rowspan="row.stop.items.length" style="min-width:8rem"><input class="field" :value="row.it.dest" @input="setStop(row.stop, 'dest', $event.target.value)"></td>
+                      </template>
+                      <template x-if="row.first">
+                        <td :rowspan="row.stop.items.length" style="min-width:6.5rem">
+                          <input type="time" class="field" :value="row.it.timeIn" @input="setStop(row.stop, 'timeIn', $event.target.value)">
+                          <button class="no-print mt-1 text-xs text-navy-700 underline" @click="setStop(row.stop, 'timeIn', nowTime())">ตอนนี้</button>
+                        </td>
+                      </template>
+                      <template x-if="row.first">
+                        <td :rowspan="row.stop.items.length" style="min-width:6.5rem">
+                          <input type="time" class="field" :value="row.it.timeOut" @input="setStop(row.stop, 'timeOut', $event.target.value)">
+                          <button class="no-print mt-1 text-xs text-navy-700 underline" @click="setStop(row.stop, 'timeOut', nowTime())">ตอนนี้</button>
+                        </td>
+                      </template>
+                      <template x-if="row.first">
+                        <td :rowspan="row.stop.items.length" style="min-width:6.5rem"><input type="number" min="0" class="field" :value="row.it.mileage" @input="setStop(row.stop, 'mileage', $event.target.valueAsNumber)" inputmode="numeric"></td>
+                      </template>
+                      <template x-if="row.first">
+                        <td :rowspan="row.stop.items.length" style="min-width:10rem"><input class="field" :value="row.it.remark" @input="setStop(row.stop, 'remark', $event.target.value)" placeholder="เช่น มีเคมีเล็บไปด้วย"></td>
+                      </template>
+                      <td class="no-print whitespace-nowrap text-center">
+                        <label class="text-xs text-slate-600 block" title="ไฮไลท์แถวนี้"><input type="checkbox" x-model="row.it.flag"> ไฮไลท์</label>
+                        <button class="text-red-600 text-xs hover:underline" @click="removeItem(row.it.id)">ลบแถว</button>
+                      </td>
+                    </tr>
+                  </template>
+                </tbody>
+              </table>
+            </div>
+            <div class="no-print p-2 bg-slate-50 border-t border-slate-200">
+              <button class="btn bg-white border border-navy-600 text-navy-700 hover:bg-navy-50" @click="addStop(g)">+ เพิ่มลูกค้า / จุดส่งในออเดอร์นี้</button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+
+    <!-- Summary -->
+    <section class="px-4 sm:px-6 pb-4">
+      <h2 class="text-lg font-semibold text-navy-800 mb-3">สรุปท้ายงาน</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <div class="rounded-md border border-slate-300 p-3"><div class="lbl">รวมจำนวน Drop</div><div class="text-2xl font-bold text-navy-800"><span x-text="trips"></span> <span class="text-sm font-medium text-slate-500">Drop</span></div></div>
+        <div class="rounded-md border border-slate-300 p-3"><label class="lbl">จำนวนเที่ยว (พนักงานกรอก)</label><input type="number" min="0" step="1" class="field" x-model.number="doc.tripCount" inputmode="numeric" placeholder="กรอกจำนวนเที่ยว"></div>
+        <div class="rounded-md border border-slate-300 p-3"><label class="lbl">จำนวนคืนค้างคืน (พนักงานกรอก)</label><input type="number" min="0" step="1" class="field" x-model.number="doc.overnightCount" inputmode="numeric" placeholder="กรอกจำนวนคืน"></div>
+        <div class="rounded-md border border-slate-300 p-3"><div class="lbl">รวมน้ำหนักสินค้า</div><div class="text-2xl font-bold text-navy-800"><span x-text="fmt(totalKg)"></span> <span class="text-sm font-medium text-slate-500">KG</span></div></div>
+        <div class="rounded-md border border-slate-300 p-3"><label class="lbl">น้ำมัน (ลิตร)</label><input type="number" min="0" step="any" class="field" x-model.number="doc.fuelLiters" inputmode="decimal"></div>
+        <div class="rounded-md border border-slate-300 p-3"><label class="lbl">น้ำมัน (บาท)</label><input type="number" min="0" step="any" class="field" x-model.number="doc.fuelBaht" inputmode="decimal"></div>
+        <div class="rounded-md border border-slate-300 p-3"><label class="lbl">ค่าทางด่วน (บาท)</label><input type="number" min="0" step="any" class="field" x-model.number="doc.tollFee" inputmode="decimal"></div>
+        <div class="rounded-md border border-navy-600 bg-navy-50 p-3"><div class="lbl">ระยะทางรวม</div>
+          <div class="text-2xl font-bold text-navy-800"><span x-text="fmt(distance)"></span> <span class="text-sm font-medium text-slate-500">กม.</span></div>
+          <div x-show="distanceError" class="text-xs text-red-600 mt-1">เลขไมล์กลับน้อยกว่าเลขไมล์ออก กรุณาตรวจสอบ</div></div>
+      </div>
+      <div class="no-print mt-3 rounded-md border border-slate-300 bg-slate-50 p-3 overflow-x-auto">
+        <div class="lbl">ค่าตอบแทน คำนวณจากเรทที่ Admin ตั้งไว้ของแต่ละคน (ไม่แสดงตอนพิมพ์)</div>
+        <table class="tbl w-full text-sm border-collapse min-w-[640px]">
+          <thead class="bg-navy-50 text-navy-800"><tr><th>ชื่อ</th><th>หน้าที่</th><th>ค่าเที่ยว (เที่ยว x เรท)</th><th>ค่าค้างคืน (คืน x เรท)</th><th>รวม (บาท)</th></tr></thead>
+          <tbody>
+            <template x-for="l in fees(doc).lines" :key="l.role + l.name">
+              <tr>
+                <td class="px-2" x-text="l.name"></td>
+                <td class="px-2" x-text="l.role === 'driver' ? 'พนักงานขับรถ' : 'ผู้ช่วย'"></td>
+                <td class="px-2" x-text="l.trips + ' x ' + fmt(l.tr) + ' = ' + fmt(l.trip) + (l.found ? '' : ' (ไม่พบเรท)')"></td>
+                <td class="px-2" x-text="l.nights + ' x ' + fmt(l.nr) + ' = ' + fmt(l.night)"></td>
+                <td class="px-2 font-semibold" x-text="fmt(l.total)"></td>
+              </tr>
+            </template>
+          </tbody>
+          <tfoot><tr class="bg-navy-50 font-semibold"><td class="px-2" colspan="4">รวมทุกคน</td><td class="px-2" x-text="fmt(fees(doc).total)"></td></tr></tfoot>
+        </table>
+        <p x-show="!doc.driver" class="text-xs text-amber-700 mt-1">เลือกพนักงานขับรถเพื่อคำนวณค่าตอบแทน</p>
+        <p x-show="fees(doc).lines.some(l => !l.found)" class="text-xs text-amber-700 mt-1">มีพนักงานที่ไม่พบเรทในแท็บ Admin จะคำนวณเป็น 0 บาท</p>
+      </div>
+    </section>
+
+    <!-- Checklist -->
+    <section class="px-4 sm:px-6 pb-6">
+      <h2 class="text-lg font-semibold text-navy-800 mb-3">เช็คลิสต์ก่อนออกเดินทาง</h2>
+      <div class="space-y-2">
+        <template x-for="(c, k) in checklistLabels" :key="k">
+          <label class="flex items-start gap-3 border border-slate-300 rounded-md p-3 cursor-pointer" :class="doc.check[k] ? 'bg-green-50 border-green-500' : ''">
+            <input type="checkbox" class="mt-1 h-5 w-5 accent-green-700" x-model="doc.check[k]">
+            <span x-text="c"></span>
+          </label>
+        </template>
+      </div>
+      <p x-show="!allChecked" class="no-print text-sm text-amber-700 mt-2">ยังตรวจไม่ครบทุกข้อ ควรตรวจให้ครบก่อนออกเดินทาง</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <div><label class="lbl">ชื่อพนักงานขับรถ</label><input class="field" x-model="doc.signDriver" :placeholder="doc.driver || 'กรอกชื่อ'"></div>
+        <div><label class="lbl">ชื่อผู้ตรวจสอบ</label><input class="field" x-model="doc.signChecker" placeholder="กรอกชื่อ"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Vehicles -->
+  <section x-show="curFleet !== null && allowedTabs.includes(tab)" class="no-print space-y-4">
+    <div x-show="justSaved && fleetOf(justSaved.vehicle) === curFleet" class="rounded-md border border-green-300 bg-green-50 p-4">
+      <p class="font-semibold text-green-800" x-text="'บันทึกใบงานเลขที่ ' + (justSaved ? (justSaved.docNo || '-') : '') + ' เรียบร้อยแล้ว'"></p>
+      <p class="text-sm text-green-900">แตะที่ทะเบียนรถของคุณเพื่อดูงานของรถคันนั้น
+        <span x-show="justSaved" x-text="'(ใบงานนี้ของรถทะเบียน ' + (justSaved ? justSaved.vehicle : '') + (justSaved && justSaved.driver ? ' ขับโดย ' + justSaved.driver : '') + ')'"></span></p>
+      <p x-show="justSaved && !justSaved.driver" class="text-sm text-amber-800 mt-1">ยังไม่ได้เลือกพนักงานขับรถ ค่าเที่ยวจะคำนวณเป็น 0 จนกว่าจะเลือก</p>
+      <p x-show="savedErr" class="text-sm text-red-700 mt-1">เบราว์เซอร์นี้ไม่อนุญาตให้เก็บข้อมูลถาวร ข้อมูลจะหายเมื่อปิดหรือรีเฟรชหน้านี้</p>
+    </div>
+
+    <div x-show="selVehicle === null && jobId === null">
+      <h2 class="text-xl font-bold text-navy-800 mb-3" x-text="tabLabel(tab)"></h2>
+      <p x-show="!vehicleCards.length" class="bg-white border border-dashed border-slate-300 rounded-md p-6 text-center text-sm text-slate-500">ยังไม่มีทะเบียนรถ เพิ่มได้ที่แท็บ Admin</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+        <template x-for="c in vehicleCards" :key="c.key">
+          <button type="button" class="text-left bg-white rounded-md border-2 p-4 hover:border-navy-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-navy-600"
+            :class="c.highlight ? 'border-green-600' : 'border-slate-200'" :style="'border-color:' + vc(c.plate).bg + ';background:' + vc(c.plate).tint" @click="selVehicle = c.key; justSaved = null">
+            <div class="flex items-start justify-between gap-2">
+              <span class="font-bold text-2xl rounded-md px-3 py-0.5" :style="chip(c.plate)" x-text="c.plate || 'ยังไม่ระบุทะเบียน'"></span>
+              <span x-show="c.highlight" class="text-xs bg-green-600 text-white rounded px-2 py-0.5 whitespace-nowrap">ใบงานใหม่</span>
+            </div>
+            <div class="text-sm text-slate-600" x-text="(c.note ? c.note + ', ' : '') + (c.driver ? 'ล่าสุดขับโดย ' + c.driver : 'ยังไม่มีพนักงานขับรถ')"></div>
+            <div class="mt-3 grid grid-cols-3 gap-2 text-center">
+              <div><div class="text-xl font-bold text-navy-800" x-text="c.today"></div><div class="text-xs text-slate-500">ใบงานวันนี้</div></div>
+              <div><div class="text-xl font-bold text-navy-800" x-text="c.jobs"></div><div class="text-xs text-slate-500">ใบงานทั้งหมด</div></div>
+              <div><div class="text-xl font-bold text-navy-800" x-text="fmt(c.kg)"></div><div class="text-xs text-slate-500">KG รวม</div></div>
+            </div>
+          </button>
+        </template>
+      </div>
+    </div>
+
+    <div x-show="selVehicle !== null && jobId === null" class="space-y-3">
+      <button class="btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50" @click="selVehicle = null">กลับไปเลือกทะเบียนรถ</button>
+      <h2 class="text-xl font-bold text-navy-800" x-text="'งานของรถทะเบียน ' + (selVehicleCard && selVehicleCard.plate ? selVehicleCard.plate : 'ยังไม่ระบุ')"></h2>
+      <p x-show="!vehicleJobs.length" class="bg-white border border-dashed border-slate-300 rounded-md p-6 text-center text-sm text-slate-500">ยังไม่มีงานของรถคันนี้</p>
+      <template x-for="j in vehicleJobs" :key="j.d.id">
+        <div class="bg-white rounded-md border border-slate-200 overflow-hidden">
+          <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-white px-4 py-2" :class="stat(j.d).head">
+            <span class="font-bold rounded px-2 py-0.5" :style="chip(j.d.vehicle)" x-text="j.d.vehicle || '-'"></span>
+            <span class="font-semibold" x-text="'ใบงาน ' + (j.d.docNo || '-')"></span>
+            <span class="text-sm" x-text="j.d.date"></span>
+            <span class="text-sm" x-show="j.d.driver" x-text="'ขับโดย ' + j.d.driver"></span>
+            <span x-show="j.isToday" class="text-xs bg-white text-navy-800 rounded px-2 py-0.5">วันนี้</span>
+            <span class="text-xs font-semibold rounded px-2 py-0.5 bg-white/25" x-text="statText(j.d)"></span>
+            <span class="ml-auto text-sm" x-text="j.st.stops + ' จุดส่ง, ' + fmt(j.st.kg) + ' KG'"></span>
+          </div>
+          <div class="divide-y divide-slate-200">
+            <template x-for="(sp, si) in j.stops" :key="si">
+              <div class="p-3">
+                <div class="flex flex-wrap justify-between gap-x-3">
+                  <span class="font-medium" x-text="(si + 1) + '. ' + sp.customer"></span>
+                  <span class="text-sm text-slate-600" x-text="(sp.dest || 'ยังไม่ระบุสถานที่ส่ง') + (sp.timeIn ? ', เข้า ' + sp.timeIn : '') + (sp.timeOut ? ', ออก ' + sp.timeOut : '')"></span>
+                </div>
+                <ul class="text-sm text-slate-700 mt-1 list-disc pl-5">
+                  <template x-for="it in sp.items" :key="it.id"><li><span x-text="(it.product || 'ไม่ระบุสินค้า') + ' ' + (it.qty || 0) + ' ' + it.unit + (it.batch ? ' (Batch ' + it.batch + ')' : '')"></span> <span x-show="it.bp" class="text-red-600 font-bold" x-text="'BP: ' + it.bp"></span></li></template>
+                </ul>
+                <p x-show="sp.remark" class="text-xs text-amber-700 mt-1" x-text="'หมายเหตุ: ' + sp.remark"></p>
+              </div>
+            </template>
+          </div>
+          <div class="p-3 bg-slate-50 border-t border-slate-200">
+            <div class="flex flex-wrap items-center gap-3">
+              <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="startJob(j.d)">เปิดงานของรถคันนี้</button><button class="btn bg-green-600 text-white hover:bg-green-700" @click="shareLine(j.d)">ส่งทาง LINE</button><button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="shareJob(j.d)">แชร์ใบงาน</button><button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="copyShare(j.d)">คัดลอก</button><button class="btn bg-white border border-slate-300 text-slate-700" @click="printDoc(j.d)">พิมพ์ใบงาน</button>
+              <button x-show="authUser && authUser.role === 'admin'" class="text-sm text-slate-600 underline" @click="openJob(j.d)">แก้ไขใบงานแบบเต็ม (แอดมิน)</button>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+
+    <div x-show="jobId !== null" class="space-y-3">
+      <template x-if="jobView">
+        <div class="space-y-3">
+          <button class="btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50" @click="jobId = null">กลับไปรายการงาน</button>
+
+          <div class="text-white rounded-md p-4" :class="stat(jobView.d).head">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h2 class="text-xl font-bold flex flex-wrap items-center gap-2"><span class="rounded px-2 py-0.5" :style="chip(jobView.d.vehicle)" x-text="jobView.d.vehicle || '-'"></span><span x-text="'ใบงาน ' + (jobView.d.docNo || '-')"></span></h2>
+              <span class="text-sm text-white/90" x-text="jobView.d.date"></span>
+            </div>
+            <p class="inline-block text-xs font-semibold rounded px-2 py-0.5 bg-white/25 mt-1" x-text="statText(jobView.d)"></p>
+            <p class="text-sm text-white/90 mt-1" x-text="'ขับโดย ' + (jobView.d.driver || '-') + (jobView.d.crew ? ', ผู้ช่วย ' + jobView.d.crew : '')"></p>
+            <p class="mt-2 text-sm" x-text="'เสร็จแล้ว ' + jobView.done + ' / ' + jobView.stops.length + ' จุดส่ง, รวม ' + fmt(jobView.st.kg) + ' KG'"></p><div class="no-print flex flex-wrap gap-2 mt-3"><button class="btn bg-green-600 text-white hover:bg-green-700" @click="shareLine(jobView.d)">ส่งทาง LINE</button><button class="btn bg-white text-navy-800" @click="shareJob(jobView.d)">แชร์ใบงาน</button><button class="btn bg-white text-navy-800" @click="copyShare(jobView.d)">คัดลอก</button></div>
+          </div>
+
+          <fieldset :disabled="jobView.d.status === 'verified'" class="space-y-3 min-w-0">
+          <div class="bg-white rounded-md border border-slate-200 p-4 grid grid-cols-2 gap-3">
+            <div><label class="lbl">เลขไมล์ออกจากโกดัง</label><input type="number" min="0" class="field" x-model.number="jobView.d.startMile" inputmode="numeric"><p x-show="prevMile(jobView.d)" class="text-xs mt-1" :class="mileWarn(jobView.d) ? 'text-amber-700' : 'text-slate-500'" x-text="mileHint(jobView.d)"></p></div>
+            <div><label class="lbl">เลขไมล์กลับถึงโกดัง</label><input type="number" min="0" class="field" x-model.number="jobView.d.endMile" inputmode="numeric"></div>
+          </div>
+          <template x-for="(sp, si) in jobView.stops" :key="si">
+            <div class="bg-white rounded-md border-2" :class="sp.timeOut ? 'border-green-500' : 'border-slate-200'">
+              <div class="px-4 pt-3 flex items-start justify-between gap-2">
+                <div>
+                  <div class="font-semibold text-navy-800 text-lg" x-text="(si + 1) + '. ' + sp.customer"></div>
+                  <div class="text-sm text-slate-600" x-text="sp.dest || 'ยังไม่ระบุสถานที่ส่ง'"></div>
+                </div>
+                <span x-show="sp.timeOut" class="text-xs bg-green-600 text-white rounded px-2 py-0.5 whitespace-nowrap">เสร็จแล้ว</span>
+              </div>
+              <ul class="px-4 pl-9 py-2 text-sm text-slate-700 list-disc">
+                <template x-for="it in sp.items" :key="it.id"><li><span x-text="(it.product || 'ไม่ระบุสินค้า') + ' ' + (it.qty || 0) + ' ' + it.unit + (it.batch ? ' (Batch ' + it.batch + ')' : '')"></span> <span x-show="it.bp" class="text-red-600 font-bold" x-text="'BP: ' + it.bp"></span></li></template>
+              </ul>
+              <div class="p-4 pt-1 grid grid-cols-2 gap-3">
+                <div><label class="lbl">เวลาเข้า</label>
+                  <div class="flex gap-1"><input type="time" class="field" :value="sp.timeIn" @input="setStop(sp, 'timeIn', $event.target.value)"><button class="btn bg-slate-200 hover:bg-slate-300 px-2" @click="setStop(sp, 'timeIn', nowTime())">ตอนนี้</button></div></div>
+                <div><label class="lbl">เวลาออก</label>
+                  <div class="flex gap-1"><input type="time" class="field" :value="sp.timeOut" @input="setStop(sp, 'timeOut', $event.target.value)"><button class="btn bg-slate-200 hover:bg-slate-300 px-2" @click="setStop(sp, 'timeOut', nowTime())">ตอนนี้</button></div></div>
+                <div class="col-span-2"><label class="lbl">เลขไมล์ (ถึงหน้างาน)</label>
+                  <input type="number" min="0" class="field" :value="sp.mileage" @input="setStop(sp, 'mileage', $event.target.valueAsNumber)" inputmode="numeric"></div>
+                <div class="col-span-2"><label class="lbl">หมายเหตุ</label>
+                  <input class="field" :value="sp.remark" @input="setStop(sp, 'remark', $event.target.value)" placeholder="เช่น ลูกค้าไม่อยู่ รอรับของ"></div>
+              </div>
+            </div>
+          </template>
+
+          <div class="bg-white rounded-md border border-slate-200 p-4 grid grid-cols-2 gap-3">
+            <div><label class="lbl">จำนวนเที่ยว</label><input type="number" min="0" step="1" class="field" x-model.number="jobView.d.tripCount" inputmode="numeric" placeholder="กรอกจำนวนเที่ยว"></div>
+            <div><label class="lbl">จำนวนคืนค้างคืน</label><input type="number" min="0" step="1" class="field" x-model.number="jobView.d.overnightCount" inputmode="numeric" placeholder="กรอกจำนวนคืน"></div>
+            <div><label class="lbl">น้ำมัน (ลิตร)</label><input type="number" min="0" step="any" class="field" x-model.number="jobView.d.fuelLiters" inputmode="decimal"></div>
+            <div><label class="lbl">น้ำมัน (บาท)</label><input type="number" min="0" step="any" class="field" x-model.number="jobView.d.fuelBaht" inputmode="decimal"></div>
+            <div class="col-span-2"><label class="lbl">ค่าทางด่วน (บาท)</label><input type="number" min="0" step="any" class="field" x-model.number="jobView.d.tollFee" inputmode="decimal"></div>
+            <div class="col-span-2 rounded-md border border-navy-600 bg-navy-50 p-3">
+              <span class="lbl">ระยะทางรวม</span>
+              <span class="text-2xl font-bold text-navy-800" x-text="fmt(jobView.st.dist) + ' กม.'"></span>
+              <p x-show="mileErr(jobView.d)" class="text-xs text-red-600 mt-1">เลขไมล์กลับน้อยกว่าเลขไมล์ออก กรุณาตรวจสอบ</p>
+            </div>
+            <div class="col-span-2 rounded-md border border-slate-300 bg-slate-50 p-3 text-sm space-y-1">
+              <span class="lbl">ค่าตอบแทนโดยประมาณ</span>
+              <template x-for="l in fees(jobView.d).lines" :key="l.role + l.name">
+                <div class="flex justify-between gap-2"><span x-text="l.name + (l.role === 'driver' ? ' (ขับรถ)' : ' (ผู้ช่วย)')"></span><span class="font-semibold" x-text="fmt(l.total) + ' บาท'"></span></div>
+              </template>
+              <div class="font-bold text-navy-800 border-t border-slate-300 pt-1 flex justify-between"><span>รวมทุกคน</span><span x-text="fmt(fees(jobView.d).total) + ' บาท'"></span></div>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-md border border-slate-200 p-4 space-y-2">
+            <h3 class="font-semibold text-navy-800">เช็คลิสต์ก่อนออกเดินทาง</h3>
+            <template x-for="(c, k) in checklistLabels" :key="k">
+              <label class="flex items-start gap-3 border rounded-md p-3 cursor-pointer" :class="jobView.d.check[k] ? 'bg-green-50 border-green-500' : 'border-slate-300'">
+                <input type="checkbox" class="mt-1 h-5 w-5 accent-green-700" x-model="jobView.d.check[k]"><span x-text="c"></span>
+              </label>
+            </template>
+            <p x-show="!Object.values(jobView.d.check).every(Boolean)" class="text-sm text-amber-700">ยังตรวจไม่ครบทุกข้อ ควรตรวจให้ครบก่อนออกเดินทาง</p>
+          </div>
+
+          <div class="bg-white rounded-md border border-slate-200 p-4 grid sm:grid-cols-2 gap-3">
+            <div><label class="lbl">ชื่อพนักงานขับรถ</label><input class="field" x-model="jobView.d.signDriver"></div>
+            <div><label class="lbl">ชื่อผู้ตรวจสอบ</label><input class="field" x-model="jobView.d.signChecker"></div>
+          </div>
+
+          </fieldset>
+
+          <p class="text-xs text-slate-500">ข้อมูลบันทึกอัตโนมัติทุกครั้งที่แก้ไข</p>
+          <template x-if="jobView.d.status === 'open'">
+            <button class="btn bg-orange-600 text-white hover:bg-orange-700 w-full py-3 text-base" @click="finishJob(jobView.d)">จบงาน</button>
+          </template>
+          <template x-if="jobView.d.status === 'done'">
+            <div class="space-y-2">
+              <p class="text-sm text-orange-900 bg-orange-50 border border-orange-400 rounded-md p-3">จบงานแล้ว รอ Admin ตรวจสอบ</p>
+              <button class="btn bg-white border border-slate-300 text-slate-700 w-full py-3" @click="reopenJob(jobView.d)">ยกเลิกการจบงาน เพื่อแก้ไขต่อ</button>
+            </div>
+          </template>
+          <template x-if="jobView.d.status === 'verified'">
+            <p class="text-sm text-green-900 bg-green-50 border border-green-600 rounded-md p-3" x-text="'ตรวจสอบแล้วโดย ' + (jobView.d.verifiedBy || '-') + ' งานนี้แก้ไขไม่ได้'"></p>
+          </template>
+          <button class="btn bg-white border border-slate-300 text-slate-700 w-full py-3" @click="jobId = null">กลับไปรายการงาน</button>
+        </div>
+      </template>
+    </div>
+  </section>
+
+  <!-- Dashboard -->
+  <section x-show="inTab('dashboard')" class="no-print space-y-4">
+    <div class="flex flex-wrap items-center justify-between gap-2">
+      <h2 class="text-xl font-bold text-navy-800">Dashboard</h2>
+      <select class="field w-auto" x-model="range" aria-label="ช่วงเวลา">
+        <option value="7">7 วันล่าสุด</option><option value="30">30 วันล่าสุด</option><option value="all">ทั้งหมด</option>
+      </select>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-3">
+      <template x-for="k in dash.kpis" :key="k.label">
+        <div class="bg-white rounded-md border border-slate-200 p-3">
+          <div class="lbl" x-text="k.label"></div>
+          <div class="text-2xl font-bold text-navy-800"><span x-text="fmt(k.value)"></span> <span class="text-sm font-medium text-slate-500" x-text="k.unit"></span></div>
+        </div>
+      </template>
+    </div>
+    <div class="flex flex-wrap gap-2 text-sm">
+      <template x-for="c in statusCounts" :key="c.label"><span class="rounded px-3 py-1 font-semibold" :class="c.cls" x-text="c.label + ' ' + c.n"></span></template>
+    </div>
+    <p x-show="dash.docs === 0" class="bg-white border border-dashed border-slate-300 rounded-md p-6 text-center text-sm text-slate-500">ยังไม่มีใบงานในช่วงเวลานี้ กรอกใบงานในแท็บ "ใบงาน" แล้วข้อมูลจะแสดงที่นี่ทันที</p>
+    <div class="grid lg:grid-cols-2 gap-4">
+      <template x-for="l in dash.lists" :key="l.title">
+        <div class="bg-white rounded-md border border-slate-200 p-4">
+          <h3 class="font-semibold text-navy-800 mb-3" x-text="l.title"></h3>
+          <p x-show="!l.rows.length" class="text-sm text-slate-500">ไม่มีข้อมูล</p>
+          <div class="space-y-2">
+            <template x-for="r in l.rows" :key="r.label">
+              <div>
+                <div class="flex justify-between gap-3 text-sm"><span class="truncate" x-text="r.label"></span><span class="font-medium whitespace-nowrap" x-text="fmt(r.value)"></span></div>
+                <div class="h-2 bg-slate-100 rounded"><div class="h-2 bg-navy-600 rounded" :style="'width:' + r.pct + '%'"></div></div>
+                <div class="text-xs text-slate-500" x-show="r.sub" x-text="r.sub"></div>
+              </div>
+            </template>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-1">ส่งออก CSV</h3>
+      <p class="text-xs text-slate-600 mb-3">เลือกช่วงเวลาและตัวกรอง แล้วเลือกรูปแบบไฟล์ ไฟล์เปิดใน Excel ได้และภาษาไทยไม่เพี้ยน</p>
+      <div class="flex flex-wrap gap-2 mb-3">
+        <button class="btn bg-slate-100 text-slate-700 hover:bg-slate-200" @click="setDxRange('today')">วันนี้</button>
+        <button class="btn bg-slate-100 text-slate-700 hover:bg-slate-200" @click="setDxRange('7')">7 วันล่าสุด</button>
+        <button class="btn bg-slate-100 text-slate-700 hover:bg-slate-200" @click="setDxRange('month')">เดือนนี้</button>
+        <button class="btn bg-slate-100 text-slate-700 hover:bg-slate-200" @click="setDxRange('30')">30 วันล่าสุด</button>
+        <button class="btn bg-slate-100 text-slate-700 hover:bg-slate-200" @click="setDxRange('all')">ทั้งหมด</button>
+      </div>
+      <div class="grid sm:grid-cols-4 gap-3">
+        <div><label class="lbl">ตั้งแต่วันที่</label><input type="date" class="field" x-model="dx.from"></div>
+        <div><label class="lbl">ถึงวันที่</label><input type="date" class="field" x-model="dx.to"></div>
+        <div><label class="lbl">ทะเบียนรถ</label>
+          <select class="field" x-model="dx.vehicle"><option value="">ทุกคัน</option>
+            <template x-for="c in vehicleCards.filter(c => c.key)" :key="c.key"><option :value="c.key" x-text="c.plate"></option></template></select></div>
+        <div><label class="lbl">สถานะ</label>
+          <select class="field" x-model="dx.status"><option value="">ทุกสถานะ</option><option value="open">กำลังดำเนินการ</option><option value="done">จบงาน รอตรวจสอบ</option><option value="verified">ตรวจสอบแล้ว</option></select></div>
+      </div>
+      <p class="text-sm font-semibold text-navy-800 mt-3" x-text="dxDocs().length + ' ใบงาน, ' + dxItemCount() + ' รายการสินค้า ตามเงื่อนไขที่เลือก'"></p>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="exportDash('items')">ตามรายการสินค้า (1 แถวต่อรายการ)</button>
+        <button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="exportDash('docs')">สรุปรายใบงาน (1 แถวต่อใบงาน)</button>
+        <button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="exportDash('all')">ทั้งหมด (ไม่จำกัดช่วงเวลา)</button>
+      </div>
+      <p class="text-sm mt-2 font-semibold" :class="dxErr ? 'text-red-600' : 'text-green-700'" x-show="dxMsg" x-text="dxMsg"></p>
+      <p class="text-xs text-slate-500 mt-2">"ทั้งหมด" ส่งออกทุกใบงานและทุกรายการ ไม่ใช้ตัวกรองด้านบน ตัวเลขระดับใบงาน (เที่ยว ไมล์ ค่าตอบแทน) ใส่ไว้เฉพาะแถวแรกของแต่ละใบงาน เพื่อไม่ให้รวมซ้ำเมื่อใช้ SUM ใน Excel</p>
+    </div>
+
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-3">ประวัติใบงาน</h3>
+      <div class="overflow-x-auto">
+        <table class="tbl w-full text-sm border-collapse min-w-[760px]">
+          <thead class="bg-navy-50 text-navy-800"><tr><th>วันที่</th><th>เลขที่ใบงาน</th><th>ทะเบียนรถ</th><th>พนักงานขับรถ</th><th>จุดส่ง</th><th>น้ำหนัก (KG)</th><th>ระยะทาง (กม.)</th><th>สถานะ</th><th></th></tr></thead>
+          <tbody>
+            <template x-for="h in histRows" :key="h.d.id">
+              <tr>
+                <td class="px-2" x-text="h.d.date"></td><td class="px-2" x-text="h.d.docNo || '-'"></td><td class="px-2"><span class="rounded px-2 py-0.5 font-semibold whitespace-nowrap" :style="chip(h.d.vehicle)" x-text="h.d.vehicle || '-'"></span></td><td class="px-2" x-text="h.d.driver || '-'"></td>
+                <td class="px-2" x-text="h.st.stops"></td><td class="px-2" x-text="fmt(h.st.kg)"></td><td class="px-2" x-text="fmt(h.st.dist)"></td>
+                <td class="px-2"><span class="text-xs font-semibold rounded px-2 py-0.5 whitespace-nowrap" :class="stat(h.d).badge" x-text="statText(h.d)"></span></td>
+                <td class="px-2 whitespace-nowrap">
+                  <span x-show="h.current" class="text-xs text-green-700">กำลังแก้ไข</span>
+                  <button x-show="!h.current" class="text-navy-700 text-xs underline mr-2" @click="openDoc(h.d)">เปิด</button>
+                  <button x-show="!h.current" class="text-red-600 text-xs underline" @click="removeHistory(h.d)">ลบ</button>
+                </td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+      <p x-show="!histRows.length" class="text-sm text-slate-500 mt-2">ยังไม่มีประวัติ ใบงานจะเข้าประวัติเมื่อกด "เริ่มใบงานใหม่"</p>
+    </div>
+  </section>
+
+  <!-- Admin -->
+  <section x-show="tab === 'admin' && authUser && authUser.role === 'admin'" class="no-print space-y-4">
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-3">จัดการบัญชีผู้ใช้งาน</h3>
+      <form class="grid sm:grid-cols-4 gap-2 items-end" @submit.prevent="createAccount()">
+        <div><label class="lbl">ชื่อผู้ใช้ใหม่</label><input class="field" x-model.trim="newAccount.username" required autocomplete="off" placeholder="อย่างน้อย 3 ตัว"></div>
+        <div><label class="lbl">รหัสผ่าน</label><input type="password" class="field" x-model="newAccount.password" required minlength="8" autocomplete="new-password" placeholder="อย่างน้อย 8 ตัว"></div>
+        <div><label class="lbl">สิทธิ์</label><select class="field" x-model="newAccount.role"><option value="user">พนักงานขับรถ</option><option value="rental">รถเช่า</option><template x-for="g in groupList" :key="g.id"><option :value="g.id" x-text="g.name"></option></template><option value="admin">Admin</option></select></div>
+        <button class="btn bg-navy-700 text-white" type="submit" :disabled="userBusy">+ สร้างบัญชี</button>
+      </form>
+      <p class="text-sm mt-2" :class="userMsgOk ? 'text-green-700' : 'text-red-600'" x-text="userMsg"></p>
+      <div class="overflow-x-auto mt-3"><table class="tbl w-full text-sm border-collapse"><thead class="bg-slate-100"><tr><th>ชื่อผู้ใช้</th><th>สิทธิ์</th><th>สถานะ</th><th>จัดการ</th></tr></thead><tbody>
+        <template x-for="u in users" :key="u.username"><tr><td x-text="u.username"></td><td x-text="roleLabel(u.role)"></td><td x-text="u.active ? 'ใช้งาน' : 'ปิดใช้งาน'"></td><td class="whitespace-nowrap"><button class="text-navy-700 underline mr-2" @click="toggleAccount(u)" x-text="u.active ? 'ปิดบัญชี' : 'เปิดบัญชี'"></button><button class="text-red-600 underline" @click="resetAccountPassword(u)">ตั้งรหัสผ่านใหม่</button></td></tr></template>
+      </tbody></table></div>
+    </div>
+    <h2 class="text-xl font-bold text-navy-800">Admin: ข้อมูลหลัก</h2>
+    <p class="text-sm font-semibold" :class="adminOk ? 'text-green-700' : 'text-red-600'" x-text="adminMsg"></p>
+
+
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <div class="flex flex-wrap items-end justify-between gap-3 mb-3">
+        <h3 class="font-semibold text-navy-800" x-text="'ตรวจสอบงาน (รอตรวจสอบ ' + reviewRows.filter(r => r.d.status === 'done').length + ' ใบ)'"></h3>
+        <div class="w-full sm:w-64"><label class="lbl">ชื่อผู้ตรวจสอบ</label><input class="field" x-model="master.checker" placeholder="กรอกชื่อ"></div>
+      </div>
+      <p x-show="!reviewRows.length" class="text-sm text-slate-500">ยังไม่มีงานที่พนักงานกดจบงาน งานที่จบแล้วจะขึ้นเป็นสีส้มที่นี่ รอให้ตรวจสอบ</p>
+      <div class="space-y-2">
+        <template x-for="r in reviewRows" :key="r.d.id">
+          <div class="rounded-md border-2 p-3" :class="r.d.status === 'done' ? 'border-orange-500 bg-orange-50' : 'border-green-600 bg-green-50'">
+            <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+              <span class="font-semibold" x-text="'ใบงาน ' + (r.d.docNo || '-')"></span>
+              <span class="text-xs font-semibold rounded px-2 py-0.5" :class="stat(r.d).badge" x-text="statText(r.d)"></span>
+              <span class="text-sm text-slate-700" x-text="'ทะเบียน ' + (r.d.vehicle || '-') + ', ' + r.d.date + ', ' + (r.d.driver || '-')"></span>
+              <span class="ml-auto text-sm" x-text="r.st.stops + ' จุดส่ง, ' + fmt(r.st.kg) + ' KG, ' + fmt(r.st.dist) + ' กม.'"></span>
+            </div>
+            <p class="text-xs text-slate-600 mt-1" x-text="r.d.status === 'done' ? 'จบงานเมื่อ ' + when(r.d.doneAt) : 'ตรวจสอบเมื่อ ' + when(r.d.verifiedAt)"></p>
+            <div class="flex flex-wrap items-center gap-2 mt-2">
+              <button x-show="r.d.status === 'done'" class="btn bg-green-700 text-white hover:bg-green-800" @click="verifyJob(r.d)">ตรวจสอบแล้ว</button>
+              <button x-show="r.d.status === 'done'" class="btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50" @click="rejectJob(r.d)">ส่งกลับแก้ไข</button>
+              <button x-show="r.d.status === 'verified'" class="btn bg-white border border-slate-300 text-slate-700 hover:bg-slate-50" @click="unverifyJob(r.d)">ยกเลิกการตรวจสอบ</button>
+              <button class="text-sm text-slate-600 underline px-2" @click="openJob(r.d)">ดูใบงานเต็ม</button>
+            </div>
+          </div>
+        </template>
+      </div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-4">
+      <div class="bg-white rounded-md border border-slate-200 p-4 lg:col-span-2 overflow-x-auto">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <h3 class="font-semibold text-navy-800" x-text="'พนักงาน (ทำงานอยู่ ' + empCounts.active + ', ลาออก ' + empCounts.resigned + ')'"></h3>
+          <button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="loadDefaultEmployees()">โหลดรายชื่อและเรทเริ่มต้น (18 คน)</button>
+        </div>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <input class="field w-28" x-model="newEmp.empId" placeholder="รหัส" @keydown.enter="addEmployee()">
+          <input class="field flex-1 min-w-[10rem]" x-model="newEmp.name" placeholder="ชื่อพนักงาน" @keydown.enter="addEmployee()">
+          <select class="field w-auto" x-model="newEmp.role"><option value="driver">พนักงานขับรถ</option><option value="crew">ผู้ช่วย</option><option value="both">ขับรถ / ผู้ช่วย</option></select>
+          <input type="number" min="0" class="field w-32" x-model.number="newEmp.tripFeeRate" placeholder="เรทค่าเที่ยว" inputmode="numeric">
+          <input type="number" min="0" class="field w-32" x-model.number="newEmp.overnightFeeRate" placeholder="ค่าค้างคืน" inputmode="numeric">
+          <label class="text-xs text-slate-600 flex items-center gap-1">เริ่มงาน <input type="date" class="field w-40" x-model="newEmp.startDate"></label>
+          <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="addEmployee()">เพิ่มพนักงานใหม่</button>
+        </div>
+        <div class="flex flex-wrap items-center gap-2 mb-2">
+          <input class="field w-56" x-model="empSearch" placeholder="ค้นหาชื่อหรือรหัส" aria-label="ค้นหาพนักงาน">
+          <select class="field w-auto" x-model="empFilter" aria-label="กรองสถานะ"><option value="all">ทั้งหมด</option><option value="active">ทำงานอยู่</option><option value="resigned">ลาออก</option></select>
+        </div>
+        <p x-show="master.employees.length && !empRows.length" class="text-sm text-slate-500 mb-2">ไม่พบพนักงานตามเงื่อนไขที่เลือก</p>
+        <table class="tbl w-full text-sm border-collapse">
+          <thead class="bg-navy-50 text-navy-800"><tr><th>รหัส</th><th>ชื่อ</th><th>ตำแหน่ง</th><th>เรทค่าเที่ยว (บาท/เที่ยว)</th><th>ค่าค้างคืน (บาท/คืน)</th><th>วันที่เริ่มงาน</th><th>สถานะ</th><th></th></tr></thead>
+          <tbody>
+            <template x-for="e in empRows" :key="e.id">
+              <tr :class="e.active === false ? 'bg-slate-100 text-slate-500' : ''">
+                <td style="min-width:6.5rem"><input class="field" x-model="e.empId" aria-label="รหัสพนักงาน"></td>
+                <td style="min-width:13rem"><input class="field" x-model="e.name" aria-label="ชื่อพนักงาน"></td>
+                <td><select class="field" x-model="e.role"><option value="driver">พนักงานขับรถ</option><option value="crew">ผู้ช่วย</option><option value="both">ขับรถ / ผู้ช่วย</option></select></td>
+                <td style="min-width:7rem"><input type="number" min="0" class="field" x-model.number="e.tripFeeRate" aria-label="เรทค่าเที่ยว" inputmode="numeric"></td>
+                <td style="min-width:7rem"><input type="number" min="0" class="field" x-model.number="e.overnightFeeRate" aria-label="ค่าค้างคืน" inputmode="numeric"></td>
+                <td style="min-width:8.5rem"><input type="date" class="field" x-model="e.startDate" aria-label="วันที่เริ่มงาน"></td>
+                <td style="min-width:9rem">
+                  <select class="field" :value="e.active === false ? 'resigned' : 'active'" @change="setActive(e, $event.target.value === 'active')" aria-label="สถานะ">
+                    <option value="active">ทำงานอยู่</option><option value="resigned">ลาออก</option></select>
+                  <input x-show="e.active === false" type="date" class="field mt-1" x-model="e.resignDate" aria-label="วันที่ลาออก">
+                </td>
+                <td class="text-center"><button class="text-red-600 text-xs underline" @click="removeEmployee(e)">ลบ</button></td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <p x-show="!master.employees.length" class="text-sm text-slate-500 mt-2">ยังไม่มีพนักงาน เพิ่มชื่อด้านบนได้เลย</p>
+      </div>
+
+      <div class="bg-white rounded-md border border-slate-200 p-4">
+        <h3 class="font-semibold text-navy-800 mb-1" x-text="'สิทธิ์ / กลุ่มรถเพิ่มเติม (' + groupList.length + ')'"></h3>
+        <p class="text-xs text-slate-600 mb-3">เพิ่มกลุ่มได้ เช่น บริษัทรถเช่าแต่ละเจ้า (รถเช่า Max speed) แต่ละกลุ่มได้เมนูของตัวเอง และเลือกเป็นสิทธิ์ตอนสร้างบัญชีได้ ผู้ใช้ในกลุ่มเห็นและกรอกได้เฉพาะรถที่ตั้งประเภทเป็นกลุ่มนั้น</p>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <input class="field flex-1 min-w-[8rem]" x-model="newGroup" placeholder="ชื่อกลุ่ม เช่น รถเช่า Max speed" @keydown.enter="addGroup()">
+          <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="addGroup()">เพิ่มกลุ่ม</button>
+        </div>
+        <table class="tbl w-full text-sm border-collapse">
+          <thead class="bg-navy-50 text-navy-800"><tr><th>ชื่อกลุ่ม / เมนู</th><th>จำนวนรถ</th><th></th></tr></thead>
+          <tbody>
+            <template x-for="g in master.groups" :key="g.id">
+              <tr><td><input class="field" x-model="g.name" aria-label="ชื่อกลุ่ม"></td><td class="px-2 text-center" x-text="vehicleCountOf(g.id)"></td><td class="text-center"><button class="text-red-600 text-xs underline" @click="removeGroup(g)">ลบ</button></td></tr>
+            </template>
+          </tbody>
+        </table>
+        <p x-show="!groupList.length" class="text-sm text-slate-500 mt-2">ยังไม่มีกลุ่มเพิ่มเติม (มีสิทธิ์พื้นฐาน: พนักงานขับรถ และ รถเช่า)</p>
+      </div>
+      <div class="bg-white rounded-md border border-slate-200 p-4">
+        <h3 class="font-semibold text-navy-800 mb-3" x-text="'ทะเบียนรถ (' + master.vehicles.length + ')'"></h3>
+        <div class="flex flex-wrap gap-2 mb-3">
+          <input class="field flex-1 min-w-[8rem]" x-model="newVeh.plate" placeholder="ทะเบียน เช่น 96-1251" @keydown.enter="addVehicle()">
+          <input class="field flex-1 min-w-[8rem]" x-model="newVeh.note" placeholder="หมายเหตุ (ไม่บังคับ)" @keydown.enter="addVehicle()"><select class="field w-auto" x-model="newVeh.type"><option value="own">รถบริษัท</option><option value="rental">รถเช่า</option><template x-for="g in groupList" :key="g.id"><option :value="g.id" x-text="g.name"></option></template></select>
+          <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="addVehicle()">เพิ่ม</button>
+        </div>
+        <table class="tbl w-full text-sm border-collapse">
+          <thead class="bg-navy-50 text-navy-800"><tr><th>ทะเบียน</th><th>ประเภท</th><th>หมายเหตุ</th><th></th></tr></thead>
+          <tbody>
+            <template x-for="v in master.vehicles" :key="v.id">
+              <tr>
+                <td><div class="flex items-center gap-2"><span class="inline-block w-5 h-5 rounded-full shrink-0" :style="'background:' + vc(v.plate).bg"></span><input class="field" x-model="v.plate" aria-label="ทะเบียนรถ"></div></td>
+                <td><select class="field" x-model="v.type" aria-label="ประเภทรถ"><option value="own">รถบริษัท</option><option value="rental">รถเช่า</option><template x-for="g in groupList" :key="g.id"><option :value="g.id" x-text="g.name"></option></template></select></td><td><input class="field" x-model="v.note" aria-label="หมายเหตุ"></td>
+                <td class="text-center"><button class="text-red-600 text-xs underline" @click="removeVehicle(v)">ลบ</button></td>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+        <p x-show="!master.vehicles.length" class="text-sm text-slate-500 mt-2">ยังไม่มีทะเบียนรถ เพิ่มทะเบียนด้านบนได้เลย</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-1">ส่งออก CSV ค่าเที่ยว</h3>
+      <p class="text-xs text-slate-600 mb-3">ค่าเที่ยวของพนักงานขับรถและผู้ช่วย = จำนวนเที่ยว x เรทค่าเที่ยวของแต่ละคน ตามที่ตั้งไว้ในตารางพนักงาน ไฟล์เปิดใน Excel ได้และภาษาไทยไม่เพี้ยน</p>
+      <div class="grid sm:grid-cols-4 gap-3 items-end">
+        <div><label class="lbl">ตั้งแต่วันที่</label><input type="date" class="field" x-model="exp.from"></div>
+        <div><label class="lbl">ถึงวันที่</label><input type="date" class="field" x-model="exp.to"></div>
+        <label class="flex items-center gap-2 text-sm pb-2"><input type="checkbox" x-model="exp.unverified"> รวมใบงานที่ยังไม่ตรวจสอบ</label>
+        <div class="text-sm pb-2 font-semibold text-navy-800" x-text="payRows().length + ' รายการ, ' + fmt(payRows().reduce((a, r) => a + r.l.total, 0)) + ' บาท'"></div>
+      </div>
+      <label class="flex items-center gap-2 text-sm mt-3"><input type="checkbox" x-model="master.crewOvernight"> ผู้ช่วยได้ค่าค้างคืนด้วย (ใช้เรทค่าค้างคืนของแต่ละคน)</label>
+      <div class="flex flex-wrap gap-2 mt-3">
+        <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="exportPaySummary()">ส่งออกสรุปรายพนักงาน (สำหรับจ่ายเงิน)</button>
+        <button class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50" @click="exportPayDetail()">ส่งออกรายละเอียดรายใบงาน</button>
+      </div>
+      <p class="text-xs text-slate-500 mt-2">ค่าเริ่มต้นนับเฉพาะใบงานที่ Admin ตรวจสอบแล้ว (เรทถูกล็อกแล้ว)</p>
+    </div>
+
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-1">เลขที่ใบงานอัตโนมัติ</h3>
+      <p class="text-xs text-slate-600 mb-3">รูปแบบ: ปี + เดือน + เลขรัน ตามวันที่ขนส่ง เลขรันเริ่มที่ 1 ใหม่ทุกเดือน ใบงานใหม่ได้เลขอัตโนมัติ แก้ด้วยมือได้ และเลขจะล็อกเมื่อกด "บันทึกใบงาน"</p>
+      <div class="grid sm:grid-cols-4 gap-3">
+        <div><label class="lbl">ปี</label>
+          <select class="field" x-model="master.docNo.yearType"><option value="CE">ค.ศ. 2 หลัก (26)</option><option value="BE">พ.ศ. 2 หลัก (69)</option></select></div>
+        <div><label class="lbl">ตัวคั่น</label>
+          <select class="field" x-model="master.docNo.sep"><option value="">ไม่มี</option><option value="-">-</option><option value="/">/</option></select></div>
+        <div><label class="lbl">จำนวนหลักเลขรัน</label>
+          <select class="field" x-model.number="master.docNo.pad"><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select></div>
+        <div class="rounded-md border border-navy-600 bg-navy-50 p-2"><div class="lbl">เลขถัดไป (เดือนนี้)</div><div class="text-xl font-bold text-navy-800" x-text="nextDocNo()"></div></div>
+      </div>
+      <div class="flex flex-wrap items-end gap-2 mt-3">
+        <div><label class="lbl">ตั้งเลขรันถัดไปของเดือนนี้ (เช่น ต่อจากเล่มกระดาษ)</label><input type="number" min="1" class="field w-40" x-model.number="docSeqInput" placeholder="เช่น 25" inputmode="numeric"></div>
+        <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="setDocSeq()">ตั้งค่า</button>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-1">สำรองข้อมูล</h3>
+      <p class="text-xs text-slate-600 mb-3">ข้อมูลเก็บในเบราว์เซอร์ของเครื่องนี้เท่านั้น ส่งออกเป็นไฟล์ JSON เพื่อสำรองหรือย้ายไปเครื่องอื่นได้</p>
+      <div class="flex flex-wrap items-center gap-2">
+        <button class="btn bg-navy-700 text-white hover:bg-navy-800" @click="exportData()">ส่งออกข้อมูล (JSON)</button>
+        <label class="btn bg-white border border-navy-700 text-navy-700 hover:bg-navy-50 cursor-pointer">นำเข้าข้อมูล (JSON)
+          <input type="file" accept="application/json,.json" class="sr-only" @change="importData($event)"></label>
+      </div>
+    </div>
+    <div class="bg-white rounded-md border border-slate-200 p-4">
+      <h3 class="font-semibold text-navy-800 mb-1">คู่มือ: สิทธิ์ผู้ใช้และการตั้งค่ารถเช่า</h3>
+      <p class="text-xs text-slate-600 mb-3">สิทธิ์เป็นการจำกัดที่หน้าเว็บ ข้อมูลเก็บในเบราว์เซอร์ของแต่ละเครื่อง ไม่ใช่การป้องกันระดับเซิร์ฟเวอร์</p>
+      <div class="overflow-x-auto">
+        <table class="tbl w-full text-sm border-collapse min-w-[560px]">
+          <thead class="bg-navy-50 text-navy-800"><tr><th>รายการ</th><th class="text-center">Admin</th><th class="text-center">พนักงานขับรถ</th><th class="text-center">รถเช่า</th></tr></thead>
+          <tbody><tr><td class="px-2">เมนู: ใบงาน</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-red-600">✗</td></tr><tr><td class="px-2">เมนู: รถ / ทะเบียน</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td></tr><tr><td class="px-2">เมนู: รถเช่า</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-green-700 font-bold">✓</td></tr><tr><td class="px-2">เมนู: Dashboard</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-red-600">✗</td></tr><tr><td class="px-2">เมนู: Admin</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-red-600">✗</td></tr><tr><td class="px-2">เห็นงานของรถบริษัท</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td></tr><tr><td class="px-2">เห็นงานของรถเช่า</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-green-700 font-bold">✓</td></tr><tr><td class="px-2">กรอกเวลาเข้า-ออก เลขไมล์ จำนวนเที่ยว/คืน เช็คลิสต์ และจบงาน</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-green-700 font-bold">✓</td></tr><tr><td class="px-2">แชร์ใบงาน / ส่งทาง LINE / พิมพ์ใบงาน (ในขอบเขตที่เห็น)</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-green-700 font-bold">✓</td></tr><tr><td class="px-2">แก้ไขใบงานแบบเต็ม</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-red-600">✗</td></tr><tr><td class="px-2">ตรวจสอบงาน จัดการพนักงาน ทะเบียน และบัญชีผู้ใช้</td><td class="text-center text-green-700 font-bold">✓</td><td class="text-center text-red-600">✗</td><td class="text-center text-red-600">✗</td></tr></tbody>
+        </table>
+      </div>
+      <h4 class="font-semibold text-navy-800 mt-4 mb-1">วิธีตั้งค่ารถเช่า</h4>
+      <ol class="list-decimal pl-5 text-sm text-slate-700 space-y-1">
+        <li>ที่ Admin → ทะเบียนรถ เพิ่มทะเบียนใหม่ หรือเปลี่ยนคอลัมน์ "ประเภท" ของทะเบียนเดิมเป็น "รถเช่า" (ทะเบียนเดิมถูกตั้งเป็น "รถบริษัท" ไว้ก่อน)</li>
+        <li>ที่ จัดการบัญชีผู้ใช้งาน สร้างบัญชีและเลือกสิทธิ์ "พนักงานขับรถ" / "รถเช่า" / "Admin"</li>
+        <li>ใบงานของรถเช่าจะปรากฏในเมนู "รถเช่า" หลังกด "บันทึกใบงาน"</li>
+        <li>ต้องการแยกบริษัทรถเช่าหลายเจ้า: ที่ Admin → "สิทธิ์ / กลุ่มรถเพิ่มเติม" เพิ่มกลุ่ม เช่น "รถเช่า Max speed" จะได้เมนูใหม่ จากนั้นตั้งประเภทของทะเบียนรถเป็นกลุ่มนั้น และสร้างบัญชีด้วยสิทธิ์ชื่อกลุ่มนั้น</li>
+        <li>บัญชี User เดิมจะกลายเป็นสิทธิ์ "พนักงานขับรถ" อัตโนมัติ</li>
+      </ol>
+    </div>
+  </section>
+
+  <div x-show="dlg.open" class="no-print fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4" @keydown.escape.window="dlg.open = false">
+    <div class="bg-white rounded-lg shadow-xl max-w-sm w-full p-5" role="dialog" aria-modal="true">
+      <p class="mb-4" x-text="dlg.msg"></p>
+      <div class="flex justify-end gap-2">
+        <button class="btn bg-white border border-slate-300 text-slate-600 hover:bg-slate-50" @click="dlg.open = false">ยกเลิก</button>
+        <button class="btn bg-red-600 text-white hover:bg-red-700" @click="dlgYes()">ยืนยัน</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ใส่ค่าตรงนี้ถ้าต้องการให้ทุกเครื่องเชื่อม Google Sheet โดยไม่ต้องกรอกที่หน้าล็อกอิน เช่น { url: 'https://script.google.com/macros/s/.../exec', token: '...' }
+const SHEET_CONFIG = null;
+const LOGO = 'data:image/jpeg;base64,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';
+function dispatchApp() {
+  const KEY = 'vschem-dispatch-v1', MKEY = 'vschem-master-v1', HKEY = 'vschem-history-v1';
+  const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+  const stable = v => JSON.stringify(v, (k, val) => (val && typeof val === 'object' && !Array.isArray(val))
+    ? Object.keys(val).sort().reduce((o, key) => { o[key] = val[key]; return o; }, {}) : val);
+  const hash = str => { let h = 5381; for (let i = 0; i < str.length; i++) h = ((h << 5) + h) ^ str.charCodeAt(i); return (h >>> 0).toString(36) + '.' + str.length; };
+  const INITIAL_EMPLOYEES = [
+    { empId: '4241001', name: 'นาย จิระพนธ์ เพลาลี', tripFeeRate: 0, overnightFeeRate: 0 },
+    { empId: '4225001', name: 'นาย นิพล เยาวะรุด', tripFeeRate: 160, overnightFeeRate: 220 },
+    { empId: '4236002', name: 'นาย บุญส่ง ภูกองไชย', tripFeeRate: 180, overnightFeeRate: 220 },
+    { empId: '4249001', name: 'นาย นิวพงษ์ ดีรักษา', tripFeeRate: 160, overnightFeeRate: 220 },
+    { empId: '5245001', name: 'นาย เฉลิมชัย โพธิกมล', tripFeeRate: 130, overnightFeeRate: 220 },
+    { empId: '4259008', name: 'นาย เทพลักษณ์ ภูกองไชย', tripFeeRate: 140, overnightFeeRate: 220 },
+    { empId: '4262001', name: 'นาย ณรงค์ฤทธิ์ มาลาศรี', tripFeeRate: 160, overnightFeeRate: 220 },
+    { empId: '4265011', name: 'นาย วีระยุทธ เหล่าบุรมย์', tripFeeRate: 140, overnightFeeRate: 220 },
+    { empId: '4266015', name: 'นาย ณัฐกร รอดแดง', tripFeeRate: 140, overnightFeeRate: 220 },
+    { empId: '4257010', name: 'นาย มนต์ชัย เหลืองทอง', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '5249001', name: 'นาย สัมฤทธิ์ ขันประกอบ', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '4265009', name: 'นาย นิกร สมสา', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '4267010', name: 'นาย ธนพล ธรรมวงศ์', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '4267019', name: 'นาย วันชัย กรอบโมกช์', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '4267021', name: 'นาย ธรรมรัตน์ พลายเถื่อน', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '4268003', name: 'นาย อิทธิพล จีนปาน', tripFeeRate: 100, overnightFeeRate: 220 },
+    { empId: '4268005', name: 'นาย อรรถพล จันดา', tripFeeRate: 140, overnightFeeRate: 220 },
+    { empId: '4268007', name: 'นาย จักรี บุญโสภา', tripFeeRate: 100, overnightFeeRate: 220 }
+  ];
+  const normName = n => String(n || '').replace(/^(นาย|นางสาว|นาง|น\.ส\.)\s*/, '').replace(/\s+/g, ' ').trim().toLowerCase();
+  const STATUS = {
+    open:     { label: 'กำลังดำเนินการ', head: 'bg-navy-800',   badge: 'bg-slate-200 text-slate-700' },
+    done:     { label: 'จบงาน รอตรวจสอบ', head: 'bg-orange-600', badge: 'bg-orange-600 text-white' },
+    verified: { label: 'ตรวจสอบแล้ว',     head: 'bg-green-700',  badge: 'bg-green-700 text-white' }
+  };
+  const seedMaster = () => ({ groups: [],
+    employees: INITIAL_EMPLOYEES.map(e => Object.assign({ id: uid(), role: 'both', active: true }, e)),
+    vehicles: [{ id: uid(), plate: '96-1251', note: '' }],
+    checker: '',
+    docNo: { yearType: 'CE', pad: 3, sep: '' }, docCounters: {}, crewOvernight: true
+  });
+  const today = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset()*60000).toISOString().slice(0,10); };
+  const blankItem = () => ({ id: Date.now() + Math.random(), inv:'', customer:'', product:'', bp:'', qty:null, unit:'KG', kg:null,
+                             batch:'', dest:'', order:0, timeIn:'', timeOut:'', mileage:null, remark:'', flag:false });
+  const blankDoc = () => ({ id: uid(), docNoAuto: true, crewList: ['', '', ''], rateSnap: null, crewNightSnap: null, signDriver:'', signChecker:'', tripCount:null, overnightCount:null, tripRate:null, overnightRate:null, status:'open', doneAt:'', verifiedAt:'', verifiedBy:'', docNo:'', date:today(), vehicle:'', driver:'', crew:'', items:[blankItem()],
+                            startMile:null, endMile:null, fuelLiters:null, fuelBaht:null, tollFee:null, check:{ pack:false, load:false, secure:false } });
+  return {
+    doc: blankDoc(),
+    savedMsg: '',
+    dbRef: null, syncState: 'off', syncMsg: 'โหมดในเครื่อง', syncMeta: {}, syncTimer: null, syncBusy: false, syncAgain: false, liveMsg: '', sheetUrl: '', sheetToken: '', liveReady: false, liveTimer: null,
+    pasteText: '', importMsg: '', importOk: true,
+    dlg: { open: false, msg: '', fn: null },
+    tab: 'dispatch', jobId: null, selVehicle: null, justSaved: null, savedErr: false,
+    newGroup: '', logo: LOGO,
+    get tabs() { return [{ id: 'dispatch', label: 'ใบงาน' }, { id: 'drivers', label: 'รถ / ทะเบียน' }, { id: 'rentals', label: 'รถเช่า' }].concat((this.master.groups || []).map(g => ({ id: g.id, label: g.name })), [{ id: 'dashboard', label: 'Dashboard' }, { id: 'admin', label: 'Admin' }]); },
+    tabLabel(id) { const x = this.tabs.find(t => t.id === id); return x ? x.label : ''; },
+    master: seedMaster(), history: [], range: '30',
+    newEmp: { empId: '', name: '', role: 'driver', tripFeeRate: null, overnightFeeRate: null, startDate: today() },
+    empSearch: '', empFilter: 'all', docSeqInput: null,
+    exp: { from: today().slice(0, 8) + '01', to: today(), unverified: false },
+    dx: { from: today().slice(0, 8) + '01', to: today(), vehicle: '', status: '' }, dxMsg: '', dxErr: false,
+    authSession: '', authUser: null, authMsg: '', authBusy: false, loginForm: { username: '', password: '' },
+    newAccount: { username: '', password: '', role: 'user' }, users: [], userBusy: false, userMsg: '', userMsgOk: true,
+    newVeh: { plate: '', note: '', type: 'own' }, adminMsg: '', adminOk: true,
+    units: ['KG','TON','PAIL','BAG','DRUM','IBC','CARTON','PCS'],
+    checklistLabels: {
+      pack: 'ภาชนะบรรจุ วัสดุบรรจุ และฉลากอยู่ในสภาพสมบูรณ์ก่อนการขนส่ง',
+      load: 'การขึ้นสินค้า ถูกต้อง ครบถ้วน',
+      secure: 'การรัดสินค้า / การปิดฝาท้าย ปิดประตู ล็อคตู้เรียบร้อย'
+    },
+    init() {
+      try {
+        const s = localStorage.getItem(KEY);
+        if (s) { this.doc = Object.assign(blankDoc(), JSON.parse(s)); this.savedMsg = 'โหลดข้อมูลที่บันทึกไว้แล้ว'; }
+      } catch (e) { this.savedMsg = 'ไม่สามารถอ่านข้อมูลที่บันทึกไว้ได้'; }
+      try {
+        const m = JSON.parse(localStorage.getItem(MKEY) || 'null');
+        if (m && Array.isArray(m.employees) && Array.isArray(m.vehicles)) this.master = m;
+        const h = JSON.parse(localStorage.getItem(HKEY) || 'null');
+        if (Array.isArray(h)) this.history = h;
+      } catch (e) { /* ใช้ข้อมูลเริ่มต้น */ }
+      this.ensureMaster(); this.normalizeCrew(this.doc);
+      if (!this.doc.docNo) { this.doc.docNoAuto = true; this.doc.docNo = this.nextDocNo(this.doc.date); }
+      this.$watch('doc', () => { this.save(false); this.scheduleSync(); });
+      this.$watch('master', v => { this.put(MKEY, v); this.scheduleSync(); this.fixTab(); });
+      this.$watch('history', v => { this.put(HKEY, v); this.scheduleSync(); });
+      this.authSession = localStorage.getItem('vschem-auth-session') || '';
+      this.restoreAuth();
+      this.initSync();
+      if ('serviceWorker' in navigator && /^https?:/.test(location.protocol)) { navigator.serviceWorker.register('sw.js').catch(() => {}); }
+    },
+    // ---- ซิงค์กับฐานข้อมูล (ทำงานในเครื่องก่อน แล้วซิงค์เมื่อออนไลน์) ----
+    async hashPw(pw, saltHex) {
+      const enc = new TextEncoder(), salt = Uint8Array.from(saltHex.match(/../g).map(h => parseInt(h, 16)));
+      const key = await crypto.subtle.importKey('raw', enc.encode(pw), 'PBKDF2', false, ['deriveBits']);
+      const bits = await crypto.subtle.deriveBits({ name: 'PBKDF2', salt, iterations: 100000, hash: 'SHA-256' }, key, 256);
+      return Array.from(new Uint8Array(bits)).map(b => b.toString(16).padStart(2, '0')).join('');
+    },
+    async setPw(u, pw) {
+      const salt = Array.from(crypto.getRandomValues(new Uint8Array(16))).map(b => b.toString(16).padStart(2, '0')).join('');
+      u.salt = salt; u.hash = await this.hashPw(pw, salt); delete u.password;
+    },
+    acctKey(name) { return 'accounts/u' + Array.from(new TextEncoder().encode(name)).map(b => b.toString(16).padStart(2, '0')).join(''); },
+    sigOf(o) { return stable(JSON.parse(JSON.stringify(o))); },
+    sheetConfig() {
+      if (typeof SHEET_CONFIG !== 'undefined' && SHEET_CONFIG && SHEET_CONFIG.url) return SHEET_CONFIG;
+      try { const c = JSON.parse(localStorage.getItem('vschem-sheet-config') || 'null'); return c && c.url ? c : null; } catch (e) { return null; }
+    },
+    saveSheet() {
+      const url = String(this.sheetUrl || '').trim(), token = String(this.sheetToken || '').trim();
+      if (!/^https:\/\/script\.google\.com\/macros\/s\/[^\/]+\/exec$/.test(url)) { this.syncState = 'err'; this.syncMsg = 'URL ต้องเป็นลิงก์ Web app ที่ลงท้าย /exec'; return; }
+      if (!token) { this.syncState = 'err'; this.syncMsg = 'กรุณากรอกรหัสลับ (TOKEN)'; return; }
+      localStorage.setItem('vschem-sheet-config', JSON.stringify({ url, token })); location.reload();
+    },
+    clearSheet() { localStorage.removeItem('vschem-sheet-config'); location.reload(); },
+    // ฐานข้อมูลเป็น Google Sheet ผ่าน Apps Script Web app: ส่งทันที และดึงข้อมูลใหม่ทุก ~4 วินาที
+    makeSheetDb(cfg) {
+      const subs = []; let since = 0, started = false;
+      const post = async body => {
+        const r = await fetch(cfg.url, { method: 'POST', headers: { 'Content-Type': 'text/plain;charset=utf-8' }, body: JSON.stringify(Object.assign({ token: cfg.token }, body)) });
+        const j = await r.json(); if (!j.ok) throw new Error(j.error || 'ผิดพลาดจาก Google Sheet'); return j;
+      };
+      const poll = async () => {
+        try {
+          const r = await fetch(cfg.url + '?token=' + encodeURIComponent(cfg.token) + '&since=' + since), j = await r.json();
+          if (!j.ok) throw new Error(j.error || 'ผิดพลาดจาก Google Sheet');
+          subs.forEach(s => {
+            const ch = j.rows.filter(x => x.key.indexOf(s.col + '/') === 0).map(x => ({ type: x.deleted ? 'removed' : 'modified', doc: { id: x.key.slice(s.col.length + 1), data: () => ({ t: x.t, json: x.json }) } }));
+            s.next({ docChanges: () => ch });
+          });
+          since = j.max;
+        } catch (e) { subs.forEach(s => s.err && s.err(e)); }
+        setTimeout(poll, document.hidden ? 30000 : 4000);
+      };
+      return {
+        collection: col => ({ onSnapshot: (next, err) => { subs.push({ col, next, err }); if (!started) { started = true; poll(); } } }),
+        doc: key => ({ set: d => post({ action: 'set', key, t: d.t, json: d.json }), delete: () => post({ action: 'delete', key, t: Date.now() }) })
+      };
+    },
+    async initSync() {
+      try { const us = this.localUsers(); let ch = false; for (const u of us) if (!u.hash && u.password) { await this.setPw(u, u.password); ch = true; } if (ch) this.saveUsers(us); } catch (e) {}
+      try { this.dbRef = (window.claude && await window.claude.use('db')) || null; } catch (e) { this.dbRef = null; }
+      if (!this.dbRef) {
+        const cfg = this.sheetConfig();
+        if (cfg) this.dbRef = this.makeSheetDb(cfg);
+      }
+      if (!this.dbRef) { this.syncState = 'off'; this.syncMsg = 'โหมดในเครื่อง (ยังไม่ได้ตั้งค่า Google Sheet)'; return; }
+      this.syncState = 'on'; this.syncMsg = 'กำลังเชื่อมฐานข้อมูล...';
+      ['jobs', 'master', 'accounts'].forEach(col => this.dbRef.collection(col).onSnapshot(snap => this.pull(col, snap), e => this.syncFail(e)));
+      setInterval(() => this.scheduleSync(0), 15000);
+      setTimeout(() => { this.liveReady = true; }, 3000);
+      this.scheduleSync(300);
+    },
+    syncFail(e) { this.syncState = 'err'; this.syncMsg = 'ซิงค์ไม่สำเร็จ: ' + ((e && (e.message || e.code)) || 'ไม่ทราบสาเหตุ') + ' (ข้อมูลยังเก็บในเครื่อง)'; },
+    syncOk() { this.syncState = 'on'; this.syncMsg = 'ซิงค์แล้ว · อัปเดตล่าสุด ' + new Date().toLocaleTimeString('th-TH'); },
+    scheduleSync(ms) {
+      if (!this.dbRef) return;
+      clearTimeout(this.syncTimer);
+      this.syncTimer = setTimeout(() => this.pushAll(), ms === undefined ? 500 : ms);
+    },
+    localJob(id) { return id === this.doc.id ? this.doc : this.history.find(h => h.id === id); },
+    localItems() {
+      const jobs = new Map();
+      this.history.forEach(h => jobs.set(h.id, h));
+      if (this.hasData(this.doc)) jobs.set(this.doc.id, this.doc);
+      const out = [...jobs.values()].map(d => ({ key: 'jobs/' + d.id, obj: d }));
+      if (this.authUser && this.authUser.role === 'admin') {          // ข้อมูลหลักและบัญชี แก้/ส่งได้เฉพาะ Admin
+        out.push({ key: 'master/main', obj: this.master });
+        this.localUsers().forEach(u => { if (u.hash) out.push({ key: this.acctKey(u.username), obj: u }); });
+      }
+      return out;
+    },
+    async pushAll() {
+      if (!this.dbRef) return;
+      if (this.syncBusy) { this.syncAgain = true; return; }
+      this.syncBusy = true;
+      try {
+        for (const it of this.localItems()) {
+          const s = this.sigOf(it.obj), m = this.syncMeta[it.key];
+          if (m && m.sig === s) continue;
+          const t = Date.now();
+          await this.dbRef.doc(it.key).set({ t, json: s });
+          this.syncMeta[it.key] = { t, sig: s };
+        }
+        this.syncOk();
+      } catch (e) { this.syncFail(e); }
+      finally { this.syncBusy = false; if (this.syncAgain) { this.syncAgain = false; this.scheduleSync(500); } }
+    },
+    async syncDelete(key) {
+      delete this.syncMeta[key];
+      if (!this.dbRef) return;
+      try { await this.dbRef.doc(key).delete(); } catch (e) { this.syncFail(e); }
+    },
+    pull(col, snap) {
+      try {
+        snap.docChanges().forEach(ch => {
+          const id = ch.doc.id, key = col + '/' + id;
+          if (ch.type === 'removed') {
+            if (col === 'jobs' && id !== this.doc.id && this.syncMeta[key]) { this.history = this.history.filter(h => h.id !== id); }
+            delete this.syncMeta[key]; return;
+          }
+          const r = ch.doc.data() || {}, m = this.syncMeta[key];
+          if (!r.json || (m && Number(r.t) <= m.t)) return;
+          let obj; try { obj = JSON.parse(r.json); } catch (e) { return; }
+          if (col === 'jobs') this.applyJob(key, id, r, obj);
+          else if (col === 'master') this.applyMaster(key, r, obj);
+          else this.applyAccount(key, r, obj);
+        });
+        this.syncOk();
+      } catch (e) { this.syncFail(e); }
+    },
+    applyJob(key, id, r, obj) {
+      const local = this.localJob(id), m = this.syncMeta[key];
+      if (local && m && this.sigOf(local) !== m.sig) return;            // มีการแก้ในเครื่องที่ยังไม่ส่ง ให้ฉบับในเครื่องชนะ
+      if (local && !m && this.sigOf(local) === r.json) { this.syncMeta[key] = { t: Number(r.t), sig: r.json }; return; }
+      const nd = Object.assign(blankDoc(), obj); this.normalizeCrew(nd);
+      if (id === this.doc.id) { this.doc = nd; }
+      else { const i = this.history.findIndex(h => h.id === id); if (i >= 0) this.history.splice(i, 1, nd); else this.history.push(nd); }
+      this.syncMeta[key] = { t: Number(r.t), sig: this.sigOf(this.localJob(id)) };
+      if (this.liveReady) { this.liveMsg = 'อัปเดตสดจากเครื่องอื่น: ใบงาน ' + (nd.docNo || '-') + (nd.vehicle ? ' (' + nd.vehicle + ')' : ''); clearTimeout(this.liveTimer); this.liveTimer = setTimeout(() => { this.liveMsg = ''; }, 5000); }
+    },
+    applyMaster(key, r, obj) {
+      const m = this.syncMeta[key];
+      if (m && this.sigOf(this.master) !== m.sig) return;
+      if (!(Array.isArray(obj.employees) && Array.isArray(obj.vehicles))) return;
+      const rc = obj.docCounters || {}, lc = this.master.docCounters || {};
+      Object.keys(lc).forEach(k => { rc[k] = Math.max(Number(rc[k]) || 0, Number(lc[k]) || 0); });
+      obj.docCounters = rc; this.master = obj; this.ensureMaster();
+      this.syncMeta[key] = { t: Number(r.t), sig: this.sigOf(this.master) };
+    },
+    applyAccount(key, r, obj) {
+      if (!obj || !obj.username || !obj.hash) return;
+      const us = this.localUsers(), i = us.findIndex(x => x.username === obj.username), m = this.syncMeta[key];
+      if (i >= 0 && m && this.sigOf(us[i]) !== m.sig) return;
+      if (i >= 0) us.splice(i, 1, obj); else us.push(obj);
+      localStorage.setItem('vschem-local-users', JSON.stringify(us));
+      this.syncMeta[key] = { t: Number(r.t), sig: this.sigOf(obj) };
+      if (this.authUser && this.authUser.role === 'admin') this.users = us;
+    },
+    async restoreAuth() {
+      if (!this.authSession) return;
+      try { const u = JSON.parse(localStorage.getItem('vschem-local-user-' + this.authSession) || 'null'); if (u) { this.authUser = u; this.tab = this.allowedTabs[0] || 'dispatch'; if (u.role === 'admin') this.loadUsers(); return; } } catch (e) {}
+      this.authSession = ''; this.authUser = null; localStorage.removeItem('vschem-auth-session');
+    },
+    localUsers() { try { return JSON.parse(localStorage.getItem('vschem-local-users') || '[]'); } catch (e) { return []; } },
+    saveUsers(u) { localStorage.setItem('vschem-local-users', JSON.stringify(u)); this.scheduleSync(); },
+    async login() {
+      if (this.authBusy) return; this.authBusy = true; this.authMsg = '';
+      try {
+        const uname = this.loginForm.username.trim(), pwd = this.loginForm.password; let u = null;
+        if (uname === 'admin' && pwd === '1234' && !this.localUsers().some(x => x.username === 'admin')) u = { username: 'admin', role: 'admin' };
+        else {
+          const us = this.localUsers(), f = us.find(x => x.username === uname && x.active !== false);
+          if (f) {
+            let ok = false;
+            if (f.hash) ok = (await this.hashPw(pwd, f.salt)) === f.hash;
+            else if (f.password && f.password === pwd) { ok = true; await this.setPw(f, pwd); this.saveUsers(us); }   // บัญชีเก่า: แปลงเป็นแบบเข้ารหัส
+            if (ok) u = { username: f.username, role: f.role };
+          }
+        }
+        if (!u) throw new Error('ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง');
+        this.authSession = 'sess_' + Date.now(); this.authUser = u; this.tab = this.allowedTabs[0] || 'dispatch'; this.selVehicle = null; this.jobId = null;
+        localStorage.setItem('vschem-auth-session', this.authSession);
+        localStorage.setItem('vschem-local-user-' + this.authSession, JSON.stringify(u));
+        this.loginForm.password = '';
+        if (u.role === 'admin') this.loadUsers();
+      } catch (e) { this.authMsg = e.message || 'เข้าสู่ระบบไม่สำเร็จ'; } finally { this.authBusy = false; }
+    },
+    async logout() { this.authSession = ''; this.authUser = null; localStorage.removeItem('vschem-auth-session'); },
+    async loadUsers() { if (this.authUser && this.authUser.role === 'admin') this.users = this.localUsers(); },
+    async createAccount() {
+      this.userBusy = true; this.userMsg = '';
+      try {
+        const n = this.newAccount, us = this.localUsers();
+        if (n.username.length < 3) throw new Error('ชื่อผู้ใช้อย่างน้อย 3 ตัว');
+        if (n.password.length < 8) throw new Error('รหัสผ่านอย่างน้อย 8 ตัว');
+        if (n.username === 'admin' || us.some(x => x.username === n.username)) throw new Error('มีชื่อผู้ใช้นี้อยู่แล้ว');
+        const nu = { username: n.username, role: n.role, active: true }; await this.setPw(nu, n.password); us.push(nu); this.saveUsers(us);
+        this.newAccount = { username: '', password: '', role: 'user' }; this.userMsgOk = true; this.userMsg = 'สร้างบัญชีผู้ใช้แล้ว'; await this.loadUsers();
+      } catch (e) { this.userMsgOk = false; this.userMsg = e.message; } finally { this.userBusy = false; }
+    },
+    async toggleAccount(u) {
+      if (!confirm((u.active ? 'ปิด' : 'เปิด') + 'บัญชี ' + u.username + '?')) return;
+      const us = this.localUsers(), f = us.find(x => x.username === u.username); if (f) f.active = !f.active;
+      this.saveUsers(us); await this.loadUsers();
+    },
+    async resetAccountPassword(u) {
+      const p = prompt('กำหนดรหัสผ่านใหม่ (อย่างน้อย 8 ตัวอักษร) สำหรับ ' + u.username);
+      if (p === null) return;
+      if (p.length < 8) { this.userMsgOk = false; this.userMsg = 'รหัสผ่านอย่างน้อย 8 ตัว'; return; }
+      const us = this.localUsers(), f = us.find(x => x.username === u.username); if (f) await this.setPw(f, p);
+      this.saveUsers(us); this.userMsgOk = true; this.userMsg = 'ตั้งรหัสผ่านใหม่แล้ว';
+    },
+    save(manual) {
+      this.savedErr = false;
+      try {
+        localStorage.setItem(KEY, JSON.stringify(this.doc));
+        this.savedMsg = (manual ? 'บันทึกแล้ว ' : 'บันทึกอัตโนมัติ ') + new Date().toLocaleTimeString('th-TH');
+      } catch (e) { this.savedErr = true; this.savedMsg = 'บันทึกไม่สำเร็จ: เบราว์เซอร์ไม่อนุญาตให้เก็บข้อมูล'; }
+    },
+    reset() {
+      this.ask('บันทึกใบงานนี้เข้าประวัติ แล้วเริ่มใบงานใหม่?', () => { this.archiveCurrent(); this.doc = this.newDoc(); this.save(true); });
+    },
+    ask(msg, fn) { this.dlg = { open: true, msg, fn }; },
+    dlgYes() { const f = this.dlg.fn; this.dlg = { open: false, msg: '', fn: null }; if (f) f(); },
+    removeItem(id) {
+      this.ask('ลบแถวสินค้านี้?', () => { this.doc.items = this.doc.items.filter(x => x.id !== id); });
+    },
+    duplicateOrder(g) {
+      const n = this.nextOrder();
+      const copy = g.items.map(it => Object.assign({}, it, { id: Date.now() + Math.random(), order: n, timeIn: '', timeOut: '', mileage: null, flag: false }));
+      let idx = -1;
+      this.doc.items.forEach((x, k) => { if (x.order === g.order) idx = k; });
+      this.doc.items.splice(idx + 1, 0, ...copy);
+    },
+    moveOrder(g, dir) {
+      const gs = this.groups, i = gs.findIndex(x => x.order === g.order), j = i + dir;
+      if (j < 0 || j >= gs.length) return;
+      [gs[i], gs[j]] = [gs[j], gs[i]];
+      this.doc.items = gs.flatMap(x => x.items.map(it => Object.assign({}, it)));
+    },
+    put(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* เบราว์เซอร์ไม่อนุญาต */ } },
+    // ---- master data ----
+    get drivers() { return this.master.employees.filter(e => (e.role === 'driver' || e.role === 'both') && e.name.trim() && e.active !== false); },
+    get crewMembers() { return this.master.employees.filter(e => (e.role === 'crew' || e.role === 'both') && e.name.trim() && e.active !== false); },
+    vc(plate) {
+      const P = ['#e11d48', '#f97316', '#eab308', '#22c55e', '#06b6d4', '#3b82f6', '#8b5cf6', '#d946ef', '#84cc16', '#14b8a6', '#0ea5e9', '#f43f5e'];
+      const k = this.normPlate(plate);
+      if (!k) return { bg: '#cbd5e1', fg: '#1e293b', tint: '#ffffff' };
+      let i = this.master.vehicles.findIndex(v => this.normPlate(v.plate) === k);
+      if (i < 0) { i = 0; for (const ch of k) i = (i * 31 + ch.charCodeAt(0)) % 9973; }
+      const bg = P[i % P.length], n = parseInt(bg.slice(1), 16), lum = 0.299 * (n >> 16) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255);
+      return { bg, fg: lum > 150 ? '#1e293b' : '#ffffff', tint: bg + '26' };
+    },
+    chip(plate) { const c = this.vc(plate); return 'background:' + c.bg + ';color:' + c.fg; },
+    inTab(id) { return this.tab === id && this.allowedTabs.includes(id); },
+    fixTab() { if (this.authUser && !this.allowedTabs.includes(this.tab)) { this.tab = this.allowedTabs[0] || ''; this.selVehicle = null; this.jobId = null; } },
+    get groupList() { return this.master.groups || []; },
+    groupName(id) { return id === 'own' ? 'รถบริษัท' : (id === 'rental' ? 'รถเช่า' : ((this.groupList.find(g => g.id === id) || {}).name || 'รถบริษัท')); },
+    roleLabel(r) { if (r === 'admin') return 'Admin'; if (r === 'user') return 'พนักงานขับรถ'; if (r === 'rental') return 'รถเช่า'; const g = this.groupList.find(x => x.id === r); return g ? g.name : 'พนักงานขับรถ'; },
+    fleetOf(plate) { const v = this.master.vehicles.find(x => this.normPlate(x.plate) === this.normPlate(plate) && this.normPlate(plate)); const ty = v && v.type; return ty && (ty === 'rental' || this.groupList.some(g => g.id === ty)) ? ty : 'own'; },
+    tabFor(f) { return f === 'own' ? 'drivers' : (f === 'rental' ? 'rentals' : f); },
+    get curFleet() { if (this.tab === 'drivers') return 'own'; if (this.tab === 'rentals') return 'rental'; return this.groupList.some(g => g.id === this.tab) ? this.tab : null; },
+    get allowedTabs() {
+      const r = this.authUser && this.authUser.role;
+      if (r === 'admin') return this.tabs.map(x => x.id);
+      if (r === 'user') return ['drivers'];
+      if (r === 'rental') return ['rentals'];
+      return this.groupList.some(g => g.id === r) ? [r] : [];
+    },
+    vehicleCountOf(id) { return this.master.vehicles.filter(v => v.type === id).length; },
+    addGroup() {
+      const n = this.newGroup.trim();
+      if (!n) return this.msg(false, 'กรุณากรอกชื่อกลุ่ม');
+      if (['รถเช่า', 'รถบริษัท'].includes(n) || this.groupList.some(g => g.name.trim().toLowerCase() === n.toLowerCase())) return this.msg(false, 'มีกลุ่มชื่อ "' + n + '" อยู่แล้ว');
+      this.master.groups.push({ id: 'g_' + uid(), name: n });
+      this.newGroup = ''; this.msg(true, 'เพิ่มกลุ่มแล้ว: ' + n + ' เมนูใหม่และสิทธิ์นี้พร้อมใช้งาน');
+    },
+    removeGroup(g) {
+      const nv = this.vehicleCountOf(g.id), na = this.users.filter(u => u.role === g.id).length;
+      this.ask('ลบกลุ่ม "' + g.name + '"? รถ ' + nv + ' คันในกลุ่มนี้จะกลับเป็น "รถบริษัท" และบัญชี ' + na + ' บัญชีในสิทธิ์นี้จะเข้าใช้งานไม่ได้จนกว่าจะเปลี่ยนสิทธิ์', () => {
+        this.master.vehicles.forEach(v => { if (v.type === g.id) v.type = 'own'; });
+        this.master.groups = this.master.groups.filter(x => x.id !== g.id);
+        this.msg(true, 'ลบกลุ่มแล้ว');
+      });
+    },
+    get vehiclesList() { return this.master.vehicles.filter(v => v.plate.trim()); },
+    setActive(e, on) {
+      e.active = on;
+      e.resignDate = on ? '' : (e.resignDate || today());
+      this.msg(true, on ? e.name + ' กลับมาทำงานแล้ว' : e.name + ' ลาออก ไม่แสดงในตัวเลือกใบงานอีก แต่ข้อมูลและเรทยังอยู่');
+    },
+    isResigned(name) { const e = this.master.employees.find(x => normName(x.name) === normName(name) && normName(name)); return !!e && e.active === false; },
+    get empCounts() { const off = this.master.employees.filter(e => e.active === false).length; return { active: this.master.employees.length - off, resigned: off }; },
+    get empRows() {
+      const q = this.empSearch.trim().toLowerCase();
+      return this.master.employees.filter(e => {
+        const off = e.active === false;
+        if (this.empFilter === 'active' && off) return false;
+        if (this.empFilter === 'resigned' && !off) return false;
+        return !q || String(e.name || '').toLowerCase().includes(q) || String(e.empId || '').toLowerCase().includes(q);
+      });
+    },
+    msg(ok, t) { this.adminOk = ok; this.adminMsg = t; },
+    addEmployee() {
+      const n = this.newEmp.name.trim();
+      if (!n) return this.msg(false, 'กรุณากรอกชื่อพนักงาน');
+      const dup = this.master.employees.find(e => normName(e.name) === normName(n));
+      if (dup) return this.msg(false, dup.active === false
+        ? '"' + n + '" ลาออกไปแล้ว ถ้ากลับมาทำงานให้เปลี่ยนสถานะในตารางเป็น "ทำงานอยู่" แทนการเพิ่มใหม่'
+        : 'มีชื่อ "' + n + '" อยู่แล้ว');
+      this.master.employees.push({ id: uid(), empId: this.newEmp.empId.trim(), name: n, role: this.newEmp.role,
+        tripFeeRate: Number(this.newEmp.tripFeeRate) || 0, overnightFeeRate: Number(this.newEmp.overnightFeeRate) || 0,
+        active: true, startDate: this.newEmp.startDate || today(), resignDate: '' });
+      this.newEmp.name = ''; this.newEmp.empId = ''; this.newEmp.tripFeeRate = null; this.newEmp.overnightFeeRate = null; this.newEmp.startDate = today(); this.msg(true, 'เพิ่มพนักงานแล้ว: ' + n);
+    },
+    removeEmployee(e) {
+      this.ask('ลบ "' + e.name + '" ถาวร? ถ้าพนักงานลาออก แนะนำให้เปลี่ยนสถานะเป็น "ลาออก" แทน เพราะถ้าลบ ใบงานเก่าที่ยังไม่ตรวจสอบจะไม่พบเรทและคำนวณค่าตอบแทนเป็น 0', () => { this.master.employees = this.master.employees.filter(x => x.id !== e.id); this.msg(true, 'ลบพนักงานแล้ว'); });
+    },
+    addVehicle() {
+      const n = this.newVeh.plate.trim();
+      if (!n) return this.msg(false, 'กรุณากรอกทะเบียนรถ');
+      if (this.master.vehicles.some(v => v.plate.trim().toLowerCase() === n.toLowerCase())) return this.msg(false, 'มีทะเบียน "' + n + '" อยู่แล้ว');
+      this.master.vehicles.push({ id: uid(), plate: n, note: this.newVeh.note.trim(), type: this.newVeh.type || 'own' });
+      this.newVeh.plate = ''; this.newVeh.note = ''; this.msg(true, 'เพิ่มทะเบียนแล้ว: ' + n);
+    },
+    removeVehicle(v) {
+      this.ask('ลบทะเบียน "' + v.plate + '"? ใบงานเก่าที่ใช้ทะเบียนนี้จะไม่ถูกแก้ไข', () => { this.master.vehicles = this.master.vehicles.filter(x => x.id !== v.id); this.msg(true, 'ลบทะเบียนแล้ว'); });
+    },
+    async saveFile(name, blob) {
+      try {
+        const dl = window.claude && await window.claude.use('downloads');
+        if (dl) { await dl.save({ filename: name, data: blob }); return true; }
+      } catch (e) { if (e && e.code === 'declined') return false; }
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob); a.download = name;
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+      return true;
+    },
+    async exportData() {
+      const blob = new Blob([JSON.stringify({ v: 1, master: this.master, history: this.history, doc: this.doc }, null, 1)], { type: 'application/json' });
+      if (await this.saveFile('vschem-data-' + today() + '.json', blob)) this.msg(true, 'ส่งออกข้อมูลแล้ว');
+    },
+    importData(ev) {
+      const f = ev.target.files[0]; if (!f) return;
+      const r = new FileReader();
+      r.onload = () => {
+        try {
+          const j = JSON.parse(r.result);
+          if (!j.master || !Array.isArray(j.master.employees) || !Array.isArray(j.master.vehicles)) throw new Error('bad');
+          this.master = j.master; this.ensureMaster(); this.history = Array.isArray(j.history) ? j.history : [];
+          if (j.doc && Array.isArray(j.doc.items)) { this.doc = Object.assign(blankDoc(), j.doc); this.normalizeCrew(this.doc); }
+          this.msg(true, 'นำเข้าข้อมูลแล้ว');
+        } catch (e) { this.msg(false, 'ไฟล์ไม่ถูกต้อง ต้องเป็นไฟล์ที่ส่งออกจากระบบนี้'); }
+        ev.target.value = '';
+      };
+      r.readAsText(f);
+    },
+    // ---- history + dashboard ----
+    hasData(d) { return d.items.some(i => i.customer || i.product || i.qty); },
+    archiveCurrent() {
+      if (!this.hasData(this.doc)) return;
+      const snap = JSON.parse(JSON.stringify(this.doc));
+      const i = this.history.findIndex(h => h.id === snap.id);
+      if (i >= 0) this.history.splice(i, 1, snap); else this.history.push(snap);
+    },
+    openDoc(d) {
+      this.archiveCurrent();
+      this.history = this.history.filter(h => h.id !== d.id);
+      this.doc = Object.assign(blankDoc(), JSON.parse(JSON.stringify(d)));
+      this.normalizeCrew(this.doc);
+      this.tab = 'dispatch';
+    },
+    removeHistory(d) {
+      this.ask('ลบใบงานเลขที่ ' + (d.docNo || '-') + ' ออกจากประวัติ?', () => {
+        this.history = this.history.filter(h => h.id !== d.id); this.syncDelete('jobs/' + d.id);
+      });
+    },
+    get allDocs() {
+      const others = this.history.filter(h => h.id !== this.doc.id);
+      const docs = this.hasData(this.doc) ? others.concat(this.doc) : others, r = this.authUser && this.authUser.role;
+      if (r && r !== 'admin') { const g = r === 'user' ? 'own' : r; return docs.filter(d => this.fleetOf(d.vehicle) === g); }
+      return docs;
+    },
+    get rangeDocs() {
+      if (this.range === 'all') return this.allDocs;
+      const c = new Date(); c.setDate(c.getDate() - Number(this.range));
+      const from = new Date(c - c.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+      return this.allDocs.filter(d => (d.date || '') >= from);
+    },
+    docStats(d) {
+      const stops = new Set(), cust = {}; let kg = 0;
+      d.items.forEach(it => {
+        const w = this.itemKg(it), c = (it.customer || '').trim();
+        kg += w;
+        if (c || (it.dest || '').trim()) stops.add((c + '|' + (it.dest || '').trim()).toLowerCase());
+        if (c) cust[c] = (cust[c] || 0) + w;
+      });
+      const a = Number(d.startMile), b = Number(d.endMile);
+      return { kg, stops: stops.size, items: d.items.length, dist: (a && b && b >= a) ? b - a : 0, cust, trips: Number(d.tripCount) || 0, pay: this.fees(d).total };
+    },
+    get histRows() {
+      return this.allDocs.map(d => ({ d, st: this.docStats(d), current: d.id === this.doc.id }))
+        .sort((x, y) => (y.d.date || '').localeCompare(x.d.date || ''));
+    },
+    get dash() {
+      const docs = this.rangeDocs, tot = { kg: 0, stops: 0, items: 0, dist: 0, trips: 0, pay: 0 };
+      const day = {}, drv = {}, veh = {}, cus = {}, pay = {};
+      const add = (m, k, st) => { const r = m[k] || (m[k] = { kg: 0, stops: 0, dist: 0, pay: 0 }); r.kg += st.kg; r.stops += st.stops; r.dist += st.dist; r.pay += st.pay; };
+      docs.forEach(d => {
+        const st = this.docStats(d);
+        tot.kg += st.kg; tot.stops += st.stops; tot.items += st.items; tot.dist += st.dist; tot.trips += st.trips; tot.pay += st.pay;
+        add(day, d.date || 'ไม่ระบุวันที่', st); add(drv, d.driver || 'ไม่ระบุ', st); add(veh, d.vehicle || 'ไม่ระบุ', st);
+        Object.entries(st.cust).forEach(([c, w]) => { cus[c] = (cus[c] || 0) + w; });
+        this.fees(d).lines.forEach(l => { const k = normName(l.name), r = pay[k] || (pay[k] = { label: l.name, amt: 0, trips: 0 }); r.amt += l.total; r.trips += l.trips; });
+      });
+      const toRows = m => Object.entries(m).map(([label, r]) => ({ label, value: r.kg, sub: r.stops + ' จุดส่ง, ' + this.fmt(r.dist) + ' กม.' }));
+      const byKg = a => a.sort((x, y) => y.value - x.value);
+      const mk = (title, rows) => { const max = Math.max(1, ...rows.map(r => r.value)); return { title, rows: rows.map(r => Object.assign({}, r, { pct: Math.round(r.value / max * 100) })) }; };
+      return {
+        docs: docs.length,
+        kpis: [
+          { label: 'ใบงาน', value: docs.length, unit: 'ใบ' }, { label: 'จุดส่ง', value: tot.stops, unit: 'จุด' },
+          { label: 'รายการสินค้า', value: tot.items, unit: 'รายการ' }, { label: 'น้ำหนักรวม', value: tot.kg, unit: 'KG' },
+          { label: 'ระยะทางรวม', value: tot.dist, unit: 'กม.' },
+          { label: 'จำนวนเที่ยว', value: tot.trips, unit: 'เที่ยว' }, { label: 'ค่าตอบแทนรวม', value: tot.pay, unit: 'บาท' }
+        ],
+        lists: [
+          mk('น้ำหนักที่ส่งรายวัน (KG)', toRows(day).sort((x, y) => x.label.localeCompare(y.label)).slice(-14)),
+          mk('ตามทะเบียนรถ (KG)', byKg(toRows(veh))),
+          mk('ลูกค้าที่รับน้ำหนักมากสุด (KG)', byKg(Object.entries(cus).map(([label, value]) => ({ label, value, sub: '' }))).slice(0, 8)),
+          mk('ค่าเที่ยวและค้างคืนตามพนักงาน (บาท)', byKg(Object.values(pay).map(r => ({ label: r.label, value: r.amt, sub: r.trips + ' เที่ยว' }))))
+        ]
+      };
+    },
+    async saveDoc() {
+      if (!this.hasData(this.doc)) { this.savedErr = true; this.savedMsg = 'ยังไม่มีรายการสินค้าให้บันทึก'; return; }
+      if (!(this.doc.vehicle || '').trim()) { this.savedErr = true; this.savedMsg = 'กรุณาเลือกทะเบียนรถก่อนบันทึก'; return; }
+      if (!this.doc.signDriver) this.doc.signDriver = this.doc.driver;
+      this.autoStartMile(this.doc);
+      this.commitDocNo();
+      this.save(true);
+      this.archiveCurrent();
+      this.justSaved = { id: this.doc.id, docNo: this.doc.docNo, driver: this.doc.driver, vehicle: this.doc.vehicle };
+      this.selVehicle = null; this.jobId = null;
+      this.tab = this.tabFor(this.fleetOf(this.doc.vehicle));
+    },
+    openJob(d) { this.jobId = null; if (d.id === this.doc.id) this.tab = 'dispatch'; else this.openDoc(d); },
+    startJob(d) {
+      if (d.status !== 'verified') this.autoStartMile(d);
+      if (!d.signDriver) d.signDriver = d.driver || '';
+      this.selVehicle = this.normPlate(d.vehicle); this.jobId = d.id;
+    },
+    // เลขไมล์เริ่มต้น: ดึงจากเลขไมล์กลับของใบงานก่อนหน้าของรถทะเบียนเดียวกัน
+    prevMile(d) {
+      const k = this.normPlate(d.vehicle); if (!k) return null;
+      const jobs = new Map(); this.history.forEach(h => jobs.set(h.id, h)); jobs.set(this.doc.id, this.doc);
+      let best = null;
+      jobs.forEach(x => {
+        if (x.id === d.id || this.normPlate(x.vehicle) !== k || (x.date || '') > (d.date || '')) return;
+        let v = Number(x.endMile) || 0;
+        if (!v) v = (x.items || []).reduce((m, i) => Math.max(m, Number(i.mileage) || 0), 0);
+        if (!v) return;
+        const key = (x.date || '') + '|' + (x.doneAt || '') + '|' + (x.docNo || '');
+        if (!best || key > best.key) best = { value: v, docNo: x.docNo || '-', key };
+      });
+      return best;
+    },
+    autoStartMile(d) { if (!Number(d.startMile)) { const p = this.prevMile(d); if (p) d.startMile = p.value; } },
+    mileWarn(d) { const p = this.prevMile(d), s = Number(d.startMile); return !!(p && s && s < p.value); },
+    mileHint(d) { const p = this.prevMile(d); if (!p) return ''; return 'ก่อนหน้า: ' + this.fmt(p.value) + ' กม. (ใบงาน ' + p.docNo + ')' + (this.mileWarn(d) ? ' · เลขไมล์ออกน้อยกว่าครั้งก่อน กรุณาตรวจสอบ' : ''); },
+    mileErr(d) { const a = Number(d.startMile), b = Number(d.endMile); return !!(a && b && b < a); },
+    get jobView() {
+      if (this.jobId === null) return null;
+      const d = this.allDocs.find(x => x.id === this.jobId);
+      if (!d) return null;
+      const stops = this.stopList(d);
+      return { d, st: this.docStats(d), stops, done: stops.filter(x => x.timeOut).length };
+    },
+    stopList(d) {
+      const m = new Map();
+      d.items.forEach(it => {
+        const k = (it.customer || '').trim() + '|' + (it.dest || '').trim();
+        if (!m.has(k)) m.set(k, { customer: (it.customer || '').trim() || 'ไม่ระบุลูกค้า', dest: (it.dest || '').trim(), timeIn: it.timeIn, timeOut: it.timeOut, mileage: it.mileage, remark: it.remark, items: [] });
+        m.get(k).items.push(it);
+      });
+      return [...m.values()];
+    },
+    normPlate(p) { return String(p || '').replace(/[\s\-.]/g, '').toLowerCase(); },
+    get vehicleCards() {
+      const docs = this.allDocs, t = today(), map = new Map();
+      this.vehiclesList.forEach(v => map.set(this.normPlate(v.plate), { plate: v.plate.trim(), note: v.note || '' }));
+      docs.forEach(d => { const k = this.normPlate(d.vehicle); if (!map.has(k)) map.set(k, { plate: (d.vehicle || '').trim(), note: '' }); });
+      return [...map].filter(([k, v]) => !this.curFleet || this.fleetOf(v.plate) === this.curFleet).map(([key, v]) => {
+        const mine = docs.filter(d => this.normPlate(d.vehicle) === key).sort((a, b) => (b.date || '').localeCompare(a.date || ''));
+        return { key, plate: v.plate, note: v.note, driver: (mine[0] && mine[0].driver) || '', jobs: mine.length,
+                 today: mine.filter(d => d.date === t).length, open: mine.filter(d => (d.status || 'open') === 'open').length,
+                 kg: mine.reduce((sum, d) => sum + this.docStats(d).kg, 0),
+                 highlight: !!this.justSaved && this.normPlate(this.justSaved.vehicle) === key };
+      }).filter(c => c.plate || c.jobs).sort((a, b) => (b.highlight - a.highlight) || a.plate.localeCompare(b.plate));
+    },
+    get selVehicleCard() { return this.selVehicle === null ? null : (this.vehicleCards.find(c => c.key === this.selVehicle) || { plate: '', note: '' }); },
+    get vehicleJobs() {
+      if (this.selVehicle === null) return [];
+      const t = today();
+      return this.allDocs.filter(d => this.normPlate(d.vehicle) === this.selVehicle)
+        .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+        .map(d => ({ d, st: this.docStats(d), stops: this.stopList(d), current: d.id === this.doc.id, isToday: d.date === t }));
+    },
+    stat(d) { return STATUS[d.status] || STATUS.open; },
+    statText(d) { return this.stat(d).label + (d.status === 'verified' && d.verifiedBy ? ' โดย ' + d.verifiedBy : ''); },
+    when(iso) { return iso ? new Date(iso).toLocaleString('th-TH', { dateStyle: 'short', timeStyle: 'short' }) : '-'; },
+    finishJob(d) {
+      const stops = this.stopList(d), miss = [];
+      if (stops.some(x => !x.timeOut)) miss.push('เวลาออกบางจุดส่ง');
+      if (!(d.driver || '').trim()) miss.push('พนักงานขับรถ (ใช้คำนวณค่าเที่ยว)');
+      if (!Number(d.endMile)) miss.push('เลขไมล์กลับถึงโกดัง');
+      if (!Number(d.tripCount)) miss.push('จำนวนเที่ยว');
+      if (!Object.values(d.check).every(Boolean)) miss.push('เช็คลิสต์');
+      const note = miss.length ? ' (ยังไม่ครบ: ' + miss.join(', ') + ')' : '';
+      this.ask('ยืนยันจบงาน? งานจะเปลี่ยนเป็นสีส้มและรอ Admin ตรวจสอบ' + note, () => {
+        d.status = 'done'; d.doneAt = new Date().toISOString(); this.jobId = null;
+      });
+    },
+    reopenJob(d) { d.status = 'open'; d.doneAt = ''; },
+    verifyJob(d) {
+      const n = (this.master.checker || '').trim();
+      if (!n) return this.msg(false, 'กรุณากรอกชื่อผู้ตรวจสอบก่อนกดตรวจสอบ');
+      this.snapRates(d);   // ล็อกเรทของทุกคนตอนตรวจสอบ เรทที่แก้ภายหลังไม่กระทบใบงานนี้
+      d.status = 'verified'; d.verifiedAt = new Date().toISOString(); d.verifiedBy = n;
+      if (!d.signChecker) d.signChecker = n;
+      this.msg(true, 'ตรวจสอบใบงาน ' + (d.docNo || '-') + ' แล้ว');
+    },
+    rejectJob(d) {
+      this.ask('ส่งใบงาน ' + (d.docNo || '-') + ' กลับให้พนักงานแก้ไข?', () => { d.status = 'open'; d.doneAt = ''; this.msg(true, 'ส่งกลับแก้ไขแล้ว'); });
+    },
+    unverifyJob(d) { d.status = 'done'; d.verifiedAt = ''; d.verifiedBy = ''; d.tripRate = null; d.overnightRate = null; d.rateSnap = null; d.crewNightSnap = null; this.msg(true, 'ยกเลิกการตรวจสอบแล้ว งานกลับไปรอตรวจสอบ'); },
+    get reviewRows() {
+      return this.allDocs.filter(d => d.status === 'done' || d.status === 'verified')
+        .map(d => ({ d, st: this.docStats(d) }))
+        .sort((a, b) => a.d.status === b.d.status ? (b.d.date || '').localeCompare(a.d.date || '') : (a.d.status === 'done' ? -1 : 1));
+    },
+    get statusCounts() {
+      const docs = this.rangeDocs, n = k => docs.filter(d => (d.status || 'open') === k).length;
+      return [
+        { label: STATUS.open.label, n: n('open'), cls: STATUS.open.badge },
+        { label: STATUS.done.label, n: n('done'), cls: STATUS.done.badge },
+        { label: STATUS.verified.label, n: n('verified'), cls: STATUS.verified.badge }
+      ];
+    },
+    rateFor(name) {
+      const e = this.master.employees.find(x => normName(x.name) === normName(name) && normName(name));
+      return e ? { found: true, empId: e.empId || '', trip: Number(e.tripFeeRate) || 0, night: Number(e.overnightFeeRate) || 0 } : { found: false, empId: '', trip: 0, night: 0 };
+    },
+    crewOf(d) {
+      const l = Array.isArray(d.crewList) && d.crewList.some(Boolean) ? d.crewList : String(d.crew || '').split(',');
+      return l.map(x => String(x || '').trim()).filter(Boolean).slice(0, 3);
+    },
+    normalizeCrew(d) {
+      if (!Array.isArray(d.crewList)) d.crewList = ['', '', ''];
+      while (d.crewList.length < 3) d.crewList.push('');
+      if (!d.crewList.some(Boolean) && d.crew) {
+        const n = String(d.crew).split(',').map(x => x.trim()).filter(Boolean).slice(0, 3);
+        d.crewList = [n[0] || '', n[1] || '', n[2] || ''];
+      }
+    },
+    syncCrew(d) {
+      d.crewList = d.crewList.map(x => (normName(x) && normName(x) === normName(d.driver)) ? '' : x);
+      d.crew = d.crewList.filter(Boolean).join(', ');
+    },
+    crewOptions(d, i) {
+      return this.crewMembers.filter(m => normName(m.name) !== normName(d.driver) && !d.crewList.some((x, k) => k !== i && x === m.name));
+    },
+    payLines(d) {
+      const people = [{ name: d.driver, role: 'driver' }].concat(this.crewOf(d).map(n => ({ name: n, role: 'crew' }))).filter(x => x.name && x.name.trim());
+      const frozen = d.status === 'verified';
+      const trips = Number(d.tripCount) || 0, nights = Number(d.overnightCount) || 0;
+      const crewNight = frozen && d.crewNightSnap != null ? !!d.crewNightSnap : this.master.crewOvernight !== false;
+      return people.map(x => {
+        const r = this.rateFor(x.name), snap = frozen && d.rateSnap ? d.rateSnap[normName(x.name)] : null;
+        let tr = r.trip, nr = r.night;
+        if (snap) { tr = Number(snap.trip) || 0; nr = Number(snap.night) || 0; }
+        else if (frozen && x.role === 'driver' && d.tripRate != null) { tr = Number(d.tripRate) || 0; nr = Number(d.overnightRate) || 0; }
+        const n = (x.role === 'driver' || crewNight) ? nights : 0;
+        return { name: x.name, role: x.role, empId: r.empId, found: r.found, tr, nr, trips, nights: n, trip: trips * tr, night: n * nr, total: trips * tr + n * nr };
+      });
+    },
+    fees(d) {
+      const lines = this.payLines(d), sum = k => lines.reduce((a, l) => a + l[k], 0);
+      return { lines, trip: sum('trip'), night: sum('night'), total: sum('total') };
+    },
+    snapRates(d) {
+      d.rateSnap = {};
+      this.payLines(d).forEach(l => { d.rateSnap[normName(l.name)] = { trip: l.tr, night: l.nr }; });
+      d.crewNightSnap = this.master.crewOvernight !== false;
+    },
+    // ---- CSV export for paying trip fees ----
+    payRows() {
+      const { from, to, unverified } = this.exp;
+      return this.allDocs.filter(d => (unverified || d.status === 'verified') && (!from || (d.date || '') >= from) && (!to || (d.date || '') <= to))
+        .sort((a, b) => (a.date || '').localeCompare(b.date || '') || String(a.docNo).localeCompare(String(b.docNo)))
+        .flatMap(d => this.fees(d).lines.map(l => ({ d, l })));
+    },
+    payDetailRows() {
+      const head = ['วันที่', 'เลขที่ใบงาน', 'ทะเบียนรถ', 'รหัสพนักงาน', 'ชื่อพนักงาน', 'หน้าที่', 'จำนวนเที่ยว', 'เรทค่าเที่ยว', 'ค่าเที่ยว', 'จำนวนคืนค้างคืน', 'เรทค่าค้างคืน', 'ค่าค้างคืน', 'รวมจ่าย', 'สถานะใบงาน', 'ผู้ตรวจสอบ'];
+      return [head].concat(this.payRows().map(({ d, l }) => [d.date, d.docNo, d.vehicle, l.empId, l.name, l.role === 'driver' ? 'พนักงานขับรถ' : 'ผู้ช่วย',
+        l.trips, l.tr, l.trip, l.nights, l.nr, l.night, l.total, this.stat(d).label, d.verifiedBy || '']));
+    },
+    paySummaryRows() {
+      const m = new Map();
+      this.payRows().forEach(({ d, l }) => {
+        const k = l.empId || normName(l.name);
+        const r = m.get(k) || { empId: l.empId, name: l.name, docs: 0, trips: 0, trip: 0, nights: 0, night: 0, total: 0 };
+        r.docs++; r.trips += l.trips; r.trip += l.trip; r.nights += l.nights; r.night += l.night; r.total += l.total; m.set(k, r);
+      });
+      const list = [...m.values()].sort((a, b) => String(a.empId || '~').localeCompare(String(b.empId || '~')) || a.name.localeCompare(b.name));
+      const sum = k => list.reduce((a, r) => a + r[k], 0);
+      return [['รหัสพนักงาน', 'ชื่อพนักงาน', 'จำนวนใบงาน', 'รวมจำนวนเที่ยว', 'ค่าเที่ยว (บาท)', 'รวมคืนค้างคืน', 'ค่าค้างคืน (บาท)', 'รวมจ่าย (บาท)']]
+        .concat(list.map(r => [r.empId, r.name, r.docs, r.trips, r.trip, r.nights, r.night, r.total]))
+        .concat(list.length ? [['', 'รวมทั้งหมด', sum('docs'), sum('trips'), sum('trip'), sum('nights'), sum('night'), sum('total')]] : []);
+    },
+    csvCell(v) {
+      let t = v == null ? '' : String(v);
+      if (/^[=+\-@\t\r]/.test(t) && isNaN(Number(t))) t = "'" + t;      // กัน Excel ตีความเป็นสูตร
+      return /[",\n\r]/.test(t) ? '"' + t.replace(/"/g, '""') + '"' : t;
+    },
+    csvText(rows) { return '\ufeff' + rows.map(r => r.map(c => this.csvCell(c)).join(',')).join('\r\n'); },
+    async exportPay(kind) {
+      const rows = this.payRows();
+      if (!rows.length) return this.msg(false, 'ไม่มีใบงานในช่วงที่เลือก (ค่าเริ่มต้นนับเฉพาะใบงานที่ตรวจสอบแล้ว)');
+      const data = kind === 'summary' ? this.paySummaryRows() : this.payDetailRows();
+      if (!(await this.saveFile('trip-pay-' + kind + '_' + (this.exp.from || 'start') + '_' + (this.exp.to || 'end') + '.csv', new Blob([this.csvText(data)], { type: 'text/csv;charset=utf-8' })))) return;
+      const miss = rows.filter(r => !r.l.found).length;
+      this.msg(!miss, 'ส่งออก CSV แล้ว ' + rows.length + ' รายการ' + (miss ? ' (มี ' + miss + ' รายการที่ไม่พบเรท ยอดเป็น 0 กรุณาตรวจสอบรายชื่อในตารางพนักงาน)' : ''));
+    },
+    exportPaySummary() { this.exportPay('summary'); },
+    exportPayDetail() { this.exportPay('detail'); },
+    loadDefaultEmployees() {
+
+      this.ask('เพิ่มพนักงานเริ่มต้น 18 คนที่ยังไม่มีในระบบ และอัปเดตรหัสกับเรทของคนที่ชื่อตรงกัน (ไม่รวมคำนำหน้า "นาย") ต้องการดำเนินการหรือไม่?', () => {
+        let added = 0, updated = 0;
+        INITIAL_EMPLOYEES.forEach(seed => {
+          const ex = this.master.employees.find(e => (e.empId && e.empId === seed.empId) || normName(e.name) === normName(seed.name));
+          if (ex) { ex.empId = seed.empId; ex.tripFeeRate = seed.tripFeeRate; ex.overnightFeeRate = seed.overnightFeeRate; updated++; }
+          else { this.master.employees.push(Object.assign({ id: uid(), role: 'both', active: true }, seed)); added++; }
+        });
+        this.msg(true, 'เพิ่มพนักงานใหม่ ' + added + ' คน, อัปเดตเรท ' + updated + ' คน');
+      });
+    },
+    ensureMaster() {
+      if (!this.master.groups) this.master.groups = [];
+      (this.master.vehicles || []).forEach(v => { if (!v.type) v.type = 'own'; });
+      const m = this.master;
+      if (!m.docNo) m.docNo = { yearType: 'CE', pad: 3, sep: '' };
+      if (!m.docCounters) m.docCounters = {};
+      if (m.checker === undefined) m.checker = '';
+      if (m.crewOvernight === undefined) m.crewOvernight = true;
+    },
+    // ---- running document number: YY + MM + running no. ----
+    get docCfg() { return Object.assign({ yearType: 'CE', pad: 3, sep: '' }, this.master.docNo || {}); },
+    docPrefix(date) {
+      const [y, m] = (date || today()).split('-').map(Number), c = this.docCfg;
+      return String((c.yearType === 'BE' ? y + 543 : y) % 100).padStart(2, '0') + String(m).padStart(2, '0') + c.sep;
+    },
+    docMax(prefix, withCounter) {
+      let max = withCounter === false ? 0 : Number((this.master.docCounters || {})[prefix]) || 0;
+      this.history.forEach(h => {
+        if (h.id !== this.doc.id && h.docNo && h.docNo.startsWith(prefix) && /^\d+$/.test(h.docNo.slice(prefix.length))) max = Math.max(max, parseInt(h.docNo.slice(prefix.length), 10));
+      });
+      return max;
+    },
+    nextDocNo(date) {
+      const prefix = this.docPrefix(date);
+      return prefix + String(this.docMax(prefix) + 1).padStart(Number(this.docCfg.pad) || 3, '0');
+    },
+    newDoc() { const d = blankDoc(); d.docNo = this.nextDocNo(d.date); return d; },
+    dateChanged() { if (this.doc.docNoAuto && this.doc.status === 'open') this.doc.docNo = this.nextDocNo(this.doc.date); },
+    commitDocNo() {
+      const d = this.doc;
+      if (!d.docNo || !d.docNo.trim() || (d.docNoAuto && this.history.some(h => h.id !== d.id && h.docNo === d.docNo))) d.docNo = this.nextDocNo(d.date);
+      const prefix = this.docPrefix(d.date), rest = d.docNo.startsWith(prefix) ? d.docNo.slice(prefix.length) : '';
+      if (/^\d+$/.test(rest)) this.master.docCounters[prefix] = Math.max(Number(this.master.docCounters[prefix]) || 0, parseInt(rest, 10));
+      d.docNoAuto = false;
+    },
+    setDocSeq() {
+      const n = Math.floor(Number(this.docSeqInput));
+      if (!(n >= 1)) return this.msg(false, 'กรุณากรอกเลขรันตั้งแต่ 1 ขึ้นไป');
+      const prefix = this.docPrefix(today()), used = this.docMax(prefix, false);
+      if (n - 1 < used) return this.msg(false, 'เดือนนี้มีใบงานที่ใช้เลขรันถึง ' + used + ' แล้ว ตั้งได้ตั้งแต่ ' + (used + 1) + ' ขึ้นไป');
+      this.master.docCounters[prefix] = n - 1;
+      this.dateChanged();
+      this.msg(true, 'ตั้งเลขรันถัดไปแล้ว: ' + this.nextDocNo());
+    },
+    dayOffset(n) { const d = new Date(); d.setDate(d.getDate() - n); return new Date(d - d.getTimezoneOffset() * 60000).toISOString().slice(0, 10); },
+    setDxRange(k) {
+      const t = today();
+      if (k === 'today') { this.dx.from = t; this.dx.to = t; }
+      else if (k === '7') { this.dx.from = this.dayOffset(6); this.dx.to = t; }
+      else if (k === '30') { this.dx.from = this.dayOffset(29); this.dx.to = t; }
+      else if (k === 'month') { this.dx.from = t.slice(0, 8) + '01'; this.dx.to = t; }
+      else { this.dx.from = ''; this.dx.to = ''; }
+    },
+    dxDocs(ignore) {
+      const { from, to, vehicle, status } = this.dx;
+      return this.allDocs.filter(d => ignore || ((!from || (d.date || '') >= from) && (!to || (d.date || '') <= to)
+          && (!vehicle || this.normPlate(d.vehicle) === vehicle) && (!status || (d.status || 'open') === status)))
+        .sort((a, b) => (a.date || '').localeCompare(b.date || '') || String(a.docNo).localeCompare(String(b.docNo)));
+    },
+    dxItemCount() { return this.dxDocs().reduce((n, d) => n + d.items.length, 0); },
+    dashRows(kind) {
+      const docs = this.dxDocs(kind === 'all'), nv = v => (v === null || v === undefined) ? '' : v;
+      if (kind === 'docs') {
+        const head = ['วันที่', 'เลขที่ใบงาน', 'ทะเบียนรถ', 'พนักงานขับรถ', 'ผู้ช่วย', 'สถานะใบงาน', 'จำนวน Drop', 'จำนวนเที่ยว', 'จำนวนคืนค้างคืน', 'จำนวนรายการสินค้า',
+          'น้ำหนักรวม (KG)', 'เลขไมล์ออกจากโกดัง', 'เลขไมล์กลับถึงโกดัง', 'ระยะทางรวม (กม.)', 'น้ำมัน (ลิตร)', 'น้ำมัน (บาท)', 'ค่าทางด่วน (บาท)', 'ค่าเที่ยว (บาท)', 'ค่าค้างคืน (บาท)', 'ค่าตอบแทนรวม (บาท)',
+          'ผู้ตรวจสอบ', 'ชื่อผู้ตรวจสอบท้ายใบงาน', 'เวลาจบงาน', 'เวลาตรวจสอบ'];
+        return [head].concat(docs.map(d => { const st = this.docStats(d), f = this.fees(d);
+          return [d.date, d.docNo, d.vehicle, d.driver, d.crew, this.stat(d).label, st.stops, nv(d.tripCount), nv(d.overnightCount), st.items, st.kg,
+            nv(d.startMile), nv(d.endMile), st.dist, nv(d.fuelLiters), nv(d.fuelBaht), nv(d.tollFee), f.trip, f.night, f.total, d.verifiedBy || '', d.signChecker || '',
+            d.doneAt ? this.when(d.doneAt) : '', d.verifiedAt ? this.when(d.verifiedAt) : '']; }));
+      }
+      const all = kind === 'all';
+      const head = ['วันที่', 'เลขที่ใบงาน', 'ทะเบียนรถ', 'พนักงานขับรถ', 'ผู้ช่วย', 'สถานะใบงาน', 'INV#', 'ชื่อลูกค้า', 'สินค้า', 'จำนวน', 'หน่วย', 'น้ำหนัก (KG)',
+        'Batch No.', 'สถานที่ส่ง', 'เวลาเข้า', 'เวลาออก', 'เลขไมล์ (ถึงหน้างาน)', 'หมายเหตุ']
+        .concat(all ? ['จำนวนเที่ยว', 'จำนวนคืนค้างคืน', 'เลขไมล์ออกจากโกดัง', 'เลขไมล์กลับถึงโกดัง', 'น้ำมัน (ลิตร)', 'น้ำมัน (บาท)', 'ค่าทางด่วน (บาท)', 'ผู้ตรวจสอบ', 'ค่าตอบแทนรวมของใบงาน (บาท)'] : []);
+      const rows = [];
+      docs.forEach(d => {
+        const base = [d.date, d.docNo, d.vehicle, d.driver, d.crew, this.stat(d).label];
+        const extra = (first) => !all ? [] : (first ? [nv(d.tripCount), nv(d.overnightCount), nv(d.startMile), nv(d.endMile), nv(d.fuelLiters), nv(d.fuelBaht), nv(d.tollFee), d.verifiedBy || '', this.fees(d).total] : ['', '', '', '', '', '', '', '', '']);
+        if (!d.items.length) rows.push(base.concat(['', '', '', '', '', '', '', '', '', '', '', ''], extra(true)));
+        d.items.forEach((it, k) => rows.push(base.concat([it.inv, it.customer, it.product, nv(it.qty), it.unit, this.itemKg(it), it.batch, it.dest,
+          it.timeIn, it.timeOut, nv(it.mileage), it.remark + (it.bp ? (it.remark ? ' | ' : '') + 'BP: ' + it.bp : '')], extra(k === 0))));
+      });
+      return [head].concat(rows);
+    },
+    downloadCsv(name, rows) { return this.saveFile(name, new Blob([this.csvText(rows)], { type: 'text/csv;charset=utf-8' })); },
+    async exportDash(kind) {
+      const docs = this.dxDocs(kind === 'all');
+      if (!docs.length) { this.dxErr = true; this.dxMsg = 'ไม่มีใบงานตามเงื่อนไขที่เลือก'; return; }
+      const rows = this.dashRows(kind);
+      const tag = kind === 'all' ? today() : (this.dx.from || 'start') + '_' + (this.dx.to || 'end');
+      if (!(await this.downloadCsv('dispatch-' + kind + '_' + tag + '.csv', rows))) { this.dxErr = true; this.dxMsg = 'ยกเลิกการบันทึกไฟล์'; return; }
+      this.dxErr = false;
+      this.dxMsg = 'ส่งออกแล้ว ' + docs.length + ' ใบงาน, ' + (rows.length - 1) + ' แถว';
+    },
+    nextOrder() { return this.doc.items.reduce((m, i) => Math.max(m, i.order || 0), 0) + 1; },
+    get groups() {
+      const out = [];
+      this.doc.items.forEach(it => {
+        let g = out[out.length - 1];
+        if (!g || g.order !== it.order) { g = { order: it.order, items: [], rows: [] }; out.push(g); }
+        g.items.push(it);
+      });
+      out.forEach(g => {
+        let stop = null;                                   // จุดส่ง = ลูกค้า + สถานที่ส่ง ที่ติดกัน
+        g.items.forEach((it, k) => {
+          const key = (it.customer || '').trim().toLowerCase() + '|' + (it.dest || '').trim().toLowerCase();
+          const first = !stop || stop.key !== key;
+          if (first) stop = { key, items: [] };
+          stop.items.push(it);
+          g.rows.push({ it, stop, first, orderFirst: k === 0 });
+        });
+      });
+      return out;
+    },
+    orderKg(g) { return g.items.reduce((sum, it) => sum + this.itemKg(it), 0); },
+    setInv(g, v) { g.items.forEach(it => it.inv = v); },
+    addOrder() { this.doc.items.push(Object.assign(blankItem(), { order: this.nextOrder() })); },
+    setStop(stop, field, v) {
+      if (typeof v === 'number' && isNaN(v)) v = null;
+      stop.items.forEach(it => it[field] = v);
+    },
+    addToStop(stop) {
+      const last = stop.items[stop.items.length - 1];
+      const idx = this.doc.items.findIndex(x => x.id === last.id);
+      const keep = ['order','inv','customer','dest','timeIn','timeOut','mileage','remark'];
+      const it = blankItem(); keep.forEach(k => it[k] = last[k]);
+      this.doc.items.splice(idx + 1, 0, it);
+    },
+    addStop(g) {
+      let idx = -1;
+      this.doc.items.forEach((x, k) => { if (x.order === g.order) idx = k; });
+      this.doc.items.splice(idx + 1, 0, Object.assign(blankItem(), { order: g.order, inv: g.items[0].inv }));
+    },
+    removeOrder(g) {
+      this.ask('ลบทั้งออเดอร์นี้ (' + g.items.length + ' รายการ)?', () => { this.doc.items = this.doc.items.filter(x => x.order !== g.order); });
+    },
+    parseTsv(txt) {
+      txt = txt.replace(/\r\n?/g, '\n');
+      const rows = []; let row = [], f = '', i = 0; const n = txt.length;
+      const endField = () => { row.push(f); f = ''; }, endRow = () => { endField(); rows.push(row); row = []; };
+      while (i < n) {
+        const ch = txt[i];
+        if (f === '' && ch === '"' && txt[i + 1] !== undefined && txt[i + 1] !== '\t' && txt[i + 1] !== '\n') {   // ช่องที่ครอบด้วย " (เช่น หัวตารางที่มีขึ้นบรรทัดใหม่ในเซลล์)
+          i++; let q = '';
+          while (i < n) { if (txt[i] === '"') { if (txt[i + 1] === '"') { q += '"'; i += 2; continue; } i++; break; } q += txt[i++]; }
+          f = q; continue;
+        }
+        if (ch === '\t') { endField(); i++; continue; }
+        if (ch === '\n') { endRow(); i++; continue; }
+        f += ch; i++;
+      }
+      if (f !== '' || row.length) endRow();
+      return rows;
+    },
+    importExcel() {
+      const raw = this.pasteText;
+      let rows = raw.includes('\t') ? this.parseTsv(raw) : raw.replace(/\r/g, '').split('\n').map(l => l.trim() ? l.split(/\s{2,}/) : []);
+      rows = rows.map(r => r.map(s => String(s).replace(/\s*\n\s*/g, ' ').trim()));
+      if (!rows.some(r => r.some(Boolean))) { this.importOk = false; this.importMsg = 'ยังไม่มีข้อมูลในช่องวาง กรุณาคัดลอกจาก Excel แล้ววาง'; return; }
+      // คอลัมน์: 0 ลำดับ | 1 เลขที่เอกสารที่เกี่ยวข้อง (INV#) | 2 ลูกค้า | 3 รายการสินค้า | 4 จำนวน | 5 Unit | 6 Batch Att. | 7 สถานที่ส่ง | 8 หมายเหตุ | 9 BP Catalog Name (เก็บตามแถวนั้น)
+      const first = this.doc.items[0];
+      const onlyBlank = this.doc.items.length === 1 && !first.qty && !['inv','customer','product','dest','batch'].some(k => first[k]);
+      let order = onlyBlank ? 1 : this.nextOrder();
+      const items = [], bad = [];
+      let prev = null, gap = false, seen = false;
+      rows.forEach((c, idx) => {
+        if (!c.some(Boolean)) { if (prev) gap = true; return; }          // บรรทัดว่าง = จบออเดอร์
+        const isFirst = !seen; seen = true;
+        const qty = parseFloat((c[4] || '').replace(/,/g, ''));
+        if (isNaN(qty)) { if (!isFirst) bad.push(idx + 1); return; }      // แถวแรกที่จำนวนไม่ใช่ตัวเลข ถือเป็นหัวตาราง
+        const ditto = v => /^["“”〃]+$|^''$/.test(v || '');
+        const d = (v, k) => (ditto(v) && prev) ? prev[k] : (v || '');     // " = เหมือนบรรทัดบน
+        const bp = d(c[9], 'bp'), inv = c[1] || '', cust = d(c[2], 'customer'), prod = d(c[3], 'product'), batch = d(c[6], 'batch'), dest = d(c[7], 'dest');
+        if (prev && (gap || (inv && prev.inv && inv !== prev.inv))) order++;
+        gap = false;
+        const same = prev && prev.order === order;
+        const fill = (v, k) => v || (same ? prev[k] : '');               // เติมค่าจากบรรทัดบนในออเดอร์เดียวกัน
+        const unit = (c[5] || 'KG').toUpperCase();
+        if (!this.units.includes(unit)) this.units.push(unit);
+        prev = Object.assign(blankItem(), {
+          order, inv: fill(inv, 'inv'), customer: fill(cust, 'customer'), product: prod, bp,
+          qty, unit, batch: batch.replace(/^'+/, ''), dest: fill(dest, 'dest'), remark: c[8] || ''
+        });
+        items.push(prev);
+      });
+      if (!items.length) { this.importOk = false; this.importMsg = 'ไม่พบแถวที่นำเข้าได้ ตรวจสอบว่าคอลัมน์ที่ 5 (จำนวน) เป็นตัวเลข'; return; }
+      this.doc.items = onlyBlank ? items : this.doc.items.concat(items);
+      const orders = new Set(items.map(i => i.order)).size;
+      const needKg = items.some(i => !['KG','TON'].includes(i.unit));
+      this.importOk = true;
+      this.importMsg = 'นำเข้าแล้ว ' + orders + ' ออเดอร์ ' + items.length + ' รายการ'
+        + (bad.length ? ' (ข้ามแถวที่ ' + bad.join(', ') + ' เพราะจำนวนไม่ใช่ตัวเลข)' : '')
+        + (needKg ? ' · กรุณากรอกน้ำหนักรวม (KG) ในรายการที่ไม่ใช่หน่วย KG/TON' : '');
+      this.pasteText = '';
+    },
+    printNative() { setTimeout(() => { try { window.print(); } catch (e) { alert('เบราว์เซอร์บล็อกการพิมพ์ กรุณาใช้ปุ่ม "พิมพ์ / บันทึกเป็น PDF"'); } }, 100); },
+    printHtml(d, auto) {
+      const e = s => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      const st = this.docStats(d), crew = this.crewOf(d);
+      const skey = x => (x.customer || '').trim().toLowerCase() + '|' + (x.dest || '').trim().toLowerCase();
+      const span = d.items.map((it, k, arr) => { if (k > 0 && skey(arr[k - 1]) === skey(it)) return 0; let n = 1; while (arr[k + n] && skey(arr[k + n]) === skey(it)) n++; return n; });
+      const rows = d.items.map((it, k) => {
+        const prev = d.items[k - 1], newInv = !prev || prev.inv !== it.inv || prev.order !== it.order;
+        return '<tr' + (it.flag ? ' class="fl"' : '') + '><td>' + (newInv ? e(it.inv) : '') + '</td>' + (span[k] ? '<td rowspan="' + span[k] + '">' + e(it.customer) + '</td>' : '') + '<td>' + e(it.product) + '</td><td class="r">' + e(it.qty) + '</td><td>' + e(it.unit) + '</td><td>' + e(it.batch) + '</td>' + (span[k] ? '<td rowspan="' + span[k] + '">' + e(it.dest) + '</td>' : '') + '<td>' + e(it.timeIn) + '</td><td>' + e(it.timeOut) + '</td><td class="r">' + e(it.mileage) + '</td><td>' + e(it.remark) + (it.bp ? (it.remark ? ' | ' : '') + '<b style="color:#dc2626">BP: ' + e(it.bp) + '</b>' : '') + '</td></tr>';
+      }).join('');
+      const chk = Object.keys(this.checklistLabels).map(k => '<div>' + (d.check && d.check[k] ? '☑' : '☐') + ' ' + e(this.checklistLabels[k]) + '</div>').join('');
+      const dist = (Number(d.startMile) && Number(d.endMile) && Number(d.endMile) >= Number(d.startMile)) ? Number(d.endMile) - Number(d.startMile) : 0;
+      return '<!DOCTYPE html><html lang="th"><head><meta charset="UTF-8"><title>ใบงาน ' + e(d.docNo) + '</title><link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700&display=swap" rel="stylesheet"><style>'
+        + '@page{size:A4 landscape;margin:8mm}body{font-family:Sarabun,"Noto Sans Thai",Tahoma,sans-serif;font-size:11px;color:#111;margin:0}'
+        + 'h1{font-size:18px;margin:0}.top{display:flex;justify-content:space-between;border-bottom:2px solid #15315c;padding-bottom:4px;margin-bottom:6px}'
+        + '.info{display:grid;grid-template-columns:repeat(4,1fr);gap:4px 10px;margin-bottom:6px}.info b{color:#475569;font-weight:600}'
+        + 'table{width:100%;border-collapse:collapse}th,td{border:1px solid #94a3b8;padding:2px 4px;vertical-align:top}th{background:#e8eef6;text-align:left}.r{text-align:right}.fl{background:#fef9c3}tr{break-inside:avoid}'
+        + '.sum{display:flex;gap:18px;margin:8px 0;font-weight:600}.sig{display:flex;gap:60px;margin-top:22px}.sig div{border-top:1px solid #111;padding-top:3px;min-width:200px;text-align:center}'
+        + '*{-webkit-print-color-adjust:exact;print-color-adjust:exact}</style></head><body>'
+        + '<div class="top"><div style="display:flex;gap:8px;align-items:center"><img src="' + LOGO + '" style="width:44px;height:44px;border-radius:6px"><div><h1>ใบบันทึกการส่งสินค้ารายวัน</h1>VS Chem · Daily Dispatch &amp; Delivery Record</div></div><div style="text-align:right">เลขที่ใบงาน<br><b style="font-size:18px">' + e(d.docNo) + '</b></div></div>'
+        + '<div class="info"><div><b>วันที่:</b> ' + e(d.date) + '</div><div><b>ทะเบียนรถ:</b> ' + e(d.vehicle) + '</div><div><b>พนักงานขับรถ:</b> ' + e(d.driver) + '</div><div><b>ผู้ช่วย:</b> ' + e(crew.join(', ')) + '</div></div>'
+        + '<table><thead><tr><th>INV#</th><th>ชื่อลูกค้า</th><th>สินค้า</th><th>จำนวน</th><th>หน่วย</th><th>Batch No.</th><th>สถานที่ส่ง</th><th>เวลาเข้า</th><th>เวลาออก</th><th>เลขไมล์</th><th>หมายเหตุ</th></tr></thead><tbody>' + rows + '</tbody></table>'
+        + '<div class="sum"><span>จุดส่ง: ' + st.stops + '</span><span>จำนวนเที่ยว: ' + e(d.tripCount) + '</span><span>ค้างคืน: ' + e(d.overnightCount) + '</span><span>น้ำหนักรวม: ' + this.fmt(st.kg) + ' KG</span><span>ไมล์ออก: ' + e(d.startMile) + '</span><span>ไมล์กลับ: ' + e(d.endMile) + '</span><span>ระยะทาง: ' + this.fmt(dist) + ' กม.</span><span>น้ำมัน: ' + e(d.fuelLiters) + ' ลิตร / ' + e(d.fuelBaht) + ' บาท</span><span>ค่าทางด่วน: ' + e(d.tollFee) + ' บาท</span></div>'
+        + '<div><b>เช็คลิสต์ก่อนออกเดินทาง</b>' + chk + '</div>'
+        + '<div class="sig"><div>' + e(d.signDriver || d.driver) + '<br>พนักงานขับรถ</div><div>' + e(d.signChecker) + '<br>ผู้ตรวจสอบ</div></div>'
+        + (auto === false ? '' : '<script>window.onload=function(){setTimeout(function(){window.print()},400)}<\/script>') + '</body></html>';
+    },
+    printViaFrame(d) {
+      const f = document.createElement('iframe');
+      f.style.cssText = 'position:fixed;right:0;bottom:0;width:0;height:0;border:0;visibility:hidden';
+      document.body.appendChild(f);
+      try { const w = f.contentWindow.document; w.open(); w.write(this.printHtml(d, false)); w.close(); } catch (e) { f.remove(); this.printNative(); return; }
+      setTimeout(() => { try { f.contentWindow.focus(); f.contentWindow.print(); } catch (e) { this.printNative(); } setTimeout(() => f.remove(), 60000); }, 600);
+    },
+    async printDoc(d) {
+      d = d && d.items ? d : this.doc;
+      try {
+        const dl = window.claude && await window.claude.use('downloads');
+        if (dl) { await dl.save({ filename: 'ใบงาน-' + (d.docNo || 'doc') + '.html', data: new Blob([this.printHtml(d)], { type: 'text/html' }) }); this.savedErr = false; this.savedMsg = 'บันทึกไฟล์สำหรับพิมพ์แล้ว เปิดไฟล์นั้นแล้วหน้าพิมพ์จะขึ้นเอง (เลือก "บันทึกเป็น PDF" ได้)'; return; }
+      } catch (e) { if (e && e.code === 'declined') return; }
+      this.printViaFrame(d);
+    },
+    shareText(d) {
+      const st = this.docStats(d), stops = this.stopList(d), crew = this.crewOf(d);
+      const L = ['📋 ใบงานเลขที่ ' + (d.docNo || '-'), 'วันที่: ' + d.date, 'ทะเบียนรถ: ' + (d.vehicle || '-'),
+        'พนักงานขับรถ: ' + (d.driver || '-') + (crew.length ? ' | ผู้ช่วย: ' + crew.join(', ') : ''),
+        'รวม ' + st.stops + ' จุดส่ง, ' + this.fmt(st.kg) + ' KG', ''];
+      stops.forEach((sp, i) => {
+        L.push((i + 1) + '. ' + sp.customer + (sp.dest ? ' (' + sp.dest + ')' : ''));
+        sp.items.forEach(it => L.push('   - ' + (it.product || 'ไม่ระบุสินค้า') + ' ' + (it.qty || 0) + ' ' + it.unit + (it.batch ? ' [Batch ' + it.batch + ']' : '') + (it.bp ? ' (BP: ' + it.bp + ')' : '')));
+        if (sp.remark) L.push('   หมายเหตุ: ' + sp.remark);
+      });
+      return L.join('\n');
+    },
+    async shareJob(d) {
+      const text = this.shareText(d);
+      try { if (navigator.share) { await navigator.share({ title: 'ใบงาน ' + (d.docNo || ''), text }); return; } }
+      catch (e) { if (e.name === 'AbortError') return; }
+      this.copyShare(d);
+    },
+    shareLine(d) { window.open('https://line.me/R/msg/text/?' + encodeURIComponent(this.shareText(d)), '_blank'); },
+    async copyShare(d) {
+      const text = this.shareText(d);
+      try { await navigator.clipboard.writeText(text); this.savedErr = false; this.savedMsg = 'คัดลอกข้อความใบงานแล้ว นำไปวางใน LINE ได้เลย'; }
+      catch (e) { prompt('คัดลอกข้อความนี้', text); }
+    },
+    nowTime() { const d = new Date(); return String(d.getHours()).padStart(2,'0') + ':' + String(d.getMinutes()).padStart(2,'0'); },
+    itemKg(it) {
+      const q = Number(it.qty) || 0;
+      if (it.unit === 'KG') return q;
+      if (it.unit === 'TON') return q * 1000;
+      return Number(it.kg) || 0;
+    },
+    get totalKg() { return this.doc.items.reduce((s, it) => s + this.itemKg(it), 0); },
+    get trips() {
+      const stops = new Set(this.doc.items.filter(i => i.dest.trim() || i.customer.trim())
+        .map(i => (i.customer.trim() + '|' + i.dest.trim()).toLowerCase()));
+      return stops.size || (this.doc.items.length ? 1 : 0);
+    },
+    get distance() {
+      const a = Number(this.doc.startMile), b = Number(this.doc.endMile);
+      return (a && b && b >= a) ? b - a : 0;
+    },
+    get distanceError() {
+      const a = Number(this.doc.startMile), b = Number(this.doc.endMile);
+      return a && b && b < a;
+    },
+    get allChecked() { return Object.values(this.doc.check).every(Boolean); },
+    fmt(n) { return Number(n).toLocaleString('th-TH', { maximumFractionDigits: 2 }); }
+  };
+}
+</script>
+</body>
+</html>
